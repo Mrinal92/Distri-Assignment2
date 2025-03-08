@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+package loadbalancer;
+
+// The go_package option tells protoc where the generated Go files belong.
+// Here we set it to "Q1/proto" (i.e. within our local module Q1, in the proto folder)
+// and we assign the local package name "proto".
+option go_package = "./";
+
+service LoadBalancerService {
+  // Called by backend servers to register themselves.
+  rpc RegisterServer(RegisterRequest) returns (RegisterResponse) {}
+
+  // Called periodically by backend servers to report current load.
+  rpc ReportLoad(LoadReportRequest) returns (LoadReportResponse) {}
+
+  // Called by clients to ask which server to use.
+  rpc GetBestServer(BestServerRequest) returns (BestServerResponse) {}
+}
+
+service ComputeService {
+  // Called by clients to perform a computational task.
+  rpc ComputeTask(ComputeRequest) returns (ComputeResponse) {}
+}
+
+message RegisterRequest {
+  string server_id = 1;   // Unique ID of the server.
+  string address = 2;     // Address (host:port) of the server.
+}
+
+message RegisterResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message LoadReportRequest {
+  string server_id = 1;
+  float current_load = 2;  // Example: number of active requests.
+}
+
+message LoadReportResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message BestServerRequest {
+  string policy = 1; // "pick_first", "round_robin", or "least_load".
+}
+
+message BestServerResponse {
+  bool success = 1;
+  string address = 2; // Chosen server's address.
+  string message = 3;
+}
+
+message ComputeRequest {
+  string task_data = 1; // Data for the computational task.
+}
+
+message ComputeResponse {
+  string result = 1;    // Result returned by the server.
+}

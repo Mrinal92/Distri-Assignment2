@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+package mapreduce;
+
+option go_package = "./";
+
+enum TaskType {
+  MAP = 0;
+  REDUCE = 1;
+  WAIT = 2;
+  EXIT = 3;
+}
+
+message Task {
+  TaskType task_type = 1;
+  int32 task_id = 2;
+  // For MAP tasks: the input file name.
+  string input_file = 3;
+  // For REDUCE tasks: the partition (reduce) id.
+  int32 reduce_id = 4;
+  // For MAP tasks: total number of reduce tasks.
+  int32 n_reduce = 5;
+  // For REDUCE tasks: total number of map tasks.
+  int32 n_map = 6;
+}
+
+message RegisterWorkerRequest {
+  string worker_address = 1;
+}
+
+message RegisterWorkerResponse {
+  string worker_id = 1;
+}
+
+message GetTaskRequest {
+  string worker_id = 1;
+}
+
+message GetTaskResponse {
+  Task task = 1;
+}
+
+message ReportTaskRequest {
+  string worker_id = 1;
+  TaskType task_type = 2;
+  int32 task_id = 3;
+}
+
+message ReportTaskResponse {
+  bool ack = 1;
+}
+
+service MasterService {
+  rpc RegisterWorker(RegisterWorkerRequest) returns (RegisterWorkerResponse);
+  rpc GetTask(GetTaskRequest) returns (GetTaskResponse);
+  rpc ReportTask(ReportTaskRequest) returns (ReportTaskResponse);
+}

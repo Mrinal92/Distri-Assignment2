@@ -1,0 +1,157 @@
+2025/03/08 16:59:09 client.go:45: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/08 16:59:09 client.go:52: [Client] Successfully connected to Load Balancer!
+2025/03/08 16:59:09 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 16:59:09 client.go:72: [Client 0] Assigned to server: localhost:9104
+2025/03/08 16:59:09 client.go:84: [Client 0] Sending task: Task#0_from_Client0 to server localhost:9104
+2025/03/08 16:59:10 client.go:94: [Client 0] Response from server: Result from server server5 for input 'Task#0_from_Client0'
+2025/03/08 16:59:10 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 16:59:10 client.go:72: [Client 0] Assigned to server: localhost:9101
+2025/03/08 16:59:10 client.go:84: [Client 0] Sending task: Task#1_from_Client0 to server localhost:9101
+2025/03/08 16:59:11 client.go:94: [Client 0] Response from server: Result from server server2 for input 'Task#1_from_Client0'
+2025/03/08 16:59:11 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 16:59:11 client.go:72: [Client 0] Assigned to server: localhost:9101
+2025/03/08 16:59:11 client.go:84: [Client 0] Sending task: Task#2_from_Client0 to server localhost:9101
+2025/03/08 16:59:12 client.go:94: [Client 0] Response from server: Result from server server2 for input 'Task#2_from_Client0'
+2025/03/08 16:59:12 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 16:59:12 client.go:72: [Client 0] Assigned to server: localhost:9103
+2025/03/08 16:59:12 client.go:84: [Client 0] Sending task: Task#3_from_Client0 to server localhost:9103
+2025/03/08 16:59:12 client.go:94: [Client 0] Response from server: Result from server server4 for input 'Task#3_from_Client0'
+2025/03/08 16:59:13 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 16:59:13 client.go:72: [Client 0] Assigned to server: localhost:9103
+2025/03/08 16:59:13 client.go:84: [Client 0] Sending task: Task#4_from_Client0 to server localhost:9103
+2025/03/08 16:59:13 client.go:94: [Client 0] Response from server: Result from server server4 for input 'Task#4_from_Client0'
+2025/03/08 16:59:13 client.go:102: [Client] All client requests completed.
+2025/03/08 17:09:18 client.go:45: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/08 17:09:18 client.go:52: [Client] Successfully connected to Load Balancer!
+2025/03/08 17:09:18 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:10:08 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = error reading from server: EOF
+2025/03/08 17:10:08 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:10:08 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused"
+2025/03/08 17:10:08 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:10:08 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused"
+2025/03/08 17:10:08 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:10:08 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused"
+2025/03/08 17:10:08 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:10:08 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused"
+2025/03/08 17:10:08 client.go:102: [Client] All client requests completed.
+2025/03/08 17:16:23 client.go:45: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/08 17:16:23 client.go:52: [Client] Successfully connected to Load Balancer!
+2025/03/08 17:16:23 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:18:52 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = error reading from server: EOF
+2025/03/08 17:18:52 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:18:52 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused"
+2025/03/08 17:18:52 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:18:52 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused"
+2025/03/08 17:18:52 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:18:52 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused"
+2025/03/08 17:18:52 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:18:52 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused"
+2025/03/08 17:18:52 client.go:102: [Client] All client requests completed.
+2025/03/08 17:20:27 client.go:45: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/08 17:20:27 client.go:52: [Client] Successfully connected to Load Balancer!
+2025/03/08 17:20:27 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: round_robin)
+2025/03/08 17:21:44 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = error reading from server: EOF
+2025/03/08 17:21:44 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: round_robin)
+2025/03/08 17:21:44 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused"
+2025/03/08 17:21:44 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: round_robin)
+2025/03/08 17:21:44 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused"
+2025/03/08 17:21:44 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: round_robin)
+2025/03/08 17:21:44 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused"
+2025/03/08 17:21:44 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: round_robin)
+2025/03/08 17:21:44 client.go:67: [Client 0] Error getting best server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused"
+2025/03/08 17:21:44 client.go:102: [Client] All client requests completed.
+2025/03/08 17:38:29 client.go:45: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/08 17:38:29 client.go:52: [Client] Successfully connected to Load Balancer!
+2025/03/08 17:38:29 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: round_robin)
+2025/03/08 17:44:30 client.go:45: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/08 17:44:30 client.go:52: [Client] Successfully connected to Load Balancer!
+2025/03/08 17:44:30 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:44:30 client.go:72: [Client 0] Assigned to server: localhost:9100
+2025/03/08 17:44:30 client.go:84: [Client 0] Sending task: Task#0_from_Client0 to server localhost:9100
+2025/03/08 17:44:31 client.go:94: [Client 0] Response from server: Result from server server1 for input 'Task#0_from_Client0'
+2025/03/08 17:44:31 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:44:31 client.go:72: [Client 0] Assigned to server: localhost:9101
+2025/03/08 17:44:31 client.go:84: [Client 0] Sending task: Task#1_from_Client0 to server localhost:9101
+2025/03/08 17:44:32 client.go:94: [Client 0] Response from server: Result from server server2 for input 'Task#1_from_Client0'
+2025/03/08 17:44:32 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:44:32 client.go:72: [Client 0] Assigned to server: localhost:9100
+2025/03/08 17:44:32 client.go:84: [Client 0] Sending task: Task#2_from_Client0 to server localhost:9100
+2025/03/08 17:44:33 client.go:94: [Client 0] Response from server: Result from server server1 for input 'Task#2_from_Client0'
+2025/03/08 17:44:33 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:44:33 client.go:72: [Client 0] Assigned to server: localhost:9101
+2025/03/08 17:44:33 client.go:84: [Client 0] Sending task: Task#3_from_Client0 to server localhost:9101
+2025/03/08 17:44:34 client.go:94: [Client 0] Response from server: Result from server server2 for input 'Task#3_from_Client0'
+2025/03/08 17:44:35 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:44:35 client.go:72: [Client 0] Assigned to server: localhost:9100
+2025/03/08 17:44:35 client.go:84: [Client 0] Sending task: Task#4_from_Client0 to server localhost:9100
+2025/03/08 17:44:36 client.go:94: [Client 0] Response from server: Result from server server1 for input 'Task#4_from_Client0'
+2025/03/08 17:44:36 client.go:102: [Client] All client requests completed.
+2025/03/08 17:46:27 client.go:45: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/08 17:46:27 client.go:52: [Client] Successfully connected to Load Balancer!
+2025/03/08 17:46:27 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:46:27 client.go:72: [Client 0] Assigned to server: localhost:9101
+2025/03/08 17:46:27 client.go:84: [Client 0] Sending task: Task#0_from_Client0 to server localhost:9101
+2025/03/08 17:46:27 client.go:94: [Client 0] Response from server: Result from server server2 for input 'Task#0_from_Client0'
+2025/03/08 17:46:27 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:46:27 client.go:72: [Client 0] Assigned to server: localhost:9102
+2025/03/08 17:46:27 client.go:84: [Client 0] Sending task: Task#1_from_Client0 to server localhost:9102
+2025/03/08 17:46:28 client.go:94: [Client 0] Response from server: Result from server server3 for input 'Task#1_from_Client0'
+2025/03/08 17:46:29 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:46:29 client.go:72: [Client 0] Assigned to server: localhost:9103
+2025/03/08 17:46:29 client.go:84: [Client 0] Sending task: Task#2_from_Client0 to server localhost:9103
+2025/03/08 17:46:29 client.go:94: [Client 0] Response from server: Result from server server4 for input 'Task#2_from_Client0'
+2025/03/08 17:46:30 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:46:30 client.go:72: [Client 0] Assigned to server: localhost:9104
+2025/03/08 17:46:30 client.go:84: [Client 0] Sending task: Task#3_from_Client0 to server localhost:9104
+2025/03/08 17:46:31 client.go:94: [Client 0] Response from server: Result from server server5 for input 'Task#3_from_Client0'
+2025/03/08 17:46:31 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: pick_first)
+2025/03/08 17:46:31 client.go:72: [Client 0] Assigned to server: localhost:9100
+2025/03/08 17:46:31 client.go:84: [Client 0] Sending task: Task#4_from_Client0 to server localhost:9100
+2025/03/08 17:46:32 client.go:94: [Client 0] Response from server: Result from server server1 for input 'Task#4_from_Client0'
+2025/03/08 17:46:32 client.go:102: [Client] All client requests completed.
+2025/03/08 17:47:38 client.go:45: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/08 17:47:38 client.go:52: [Client] Successfully connected to Load Balancer!
+2025/03/08 17:47:38 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: round_robin)
+2025/03/08 17:47:38 client.go:72: [Client 0] Assigned to server: localhost:9101
+2025/03/08 17:47:38 client.go:84: [Client 0] Sending task: Task#0_from_Client0 to server localhost:9101
+2025/03/08 17:47:39 client.go:94: [Client 0] Response from server: Result from server server2 for input 'Task#0_from_Client0'
+2025/03/08 17:47:39 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: round_robin)
+2025/03/08 17:47:39 client.go:72: [Client 0] Assigned to server: localhost:9102
+2025/03/08 17:47:39 client.go:84: [Client 0] Sending task: Task#1_from_Client0 to server localhost:9102
+2025/03/08 17:47:40 client.go:94: [Client 0] Response from server: Result from server server3 for input 'Task#1_from_Client0'
+2025/03/08 17:47:43 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: round_robin)
+2025/03/08 17:47:43 client.go:72: [Client 0] Assigned to server: localhost:9103
+2025/03/08 17:47:43 client.go:84: [Client 0] Sending task: Task#2_from_Client0 to server localhost:9103
+2025/03/08 17:47:43 client.go:94: [Client 0] Response from server: Result from server server4 for input 'Task#2_from_Client0'
+2025/03/08 17:47:43 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: round_robin)
+2025/03/08 17:47:43 client.go:72: [Client 0] Assigned to server: localhost:9104
+2025/03/08 17:47:43 client.go:84: [Client 0] Sending task: Task#3_from_Client0 to server localhost:9104
+2025/03/08 17:47:44 client.go:94: [Client 0] Response from server: Result from server server5 for input 'Task#3_from_Client0'
+2025/03/08 17:47:44 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: round_robin)
+2025/03/08 17:47:44 client.go:72: [Client 0] Assigned to server: localhost:9100
+2025/03/08 17:47:44 client.go:84: [Client 0] Sending task: Task#4_from_Client0 to server localhost:9100
+2025/03/08 17:47:45 client.go:94: [Client 0] Response from server: Result from server server1 for input 'Task#4_from_Client0'
+2025/03/08 17:47:45 client.go:102: [Client] All client requests completed.
+2025/03/08 17:59:59 client.go:45: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/08 17:59:59 client.go:52: [Client] Successfully connected to Load Balancer!
+2025/03/08 17:59:59 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: least_load)
+2025/03/08 17:59:59 client.go:72: [Client 0] Assigned to server: localhost:9100
+2025/03/08 17:59:59 client.go:84: [Client 0] Sending task: Task#0_from_Client0 to server localhost:9100
+2025/03/08 18:00:01 client.go:94: [Client 0] Response from server: Result from server server1 for input 'Task#0_from_Client0'
+2025/03/08 18:00:01 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: least_load)
+2025/03/08 18:00:01 client.go:72: [Client 0] Assigned to server: localhost:9100
+2025/03/08 18:00:01 client.go:84: [Client 0] Sending task: Task#1_from_Client0 to server localhost:9100
+2025/03/08 18:00:04 client.go:94: [Client 0] Response from server: Result from server server1 for input 'Task#1_from_Client0'
+2025/03/08 18:00:04 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: least_load)
+2025/03/08 18:00:04 client.go:72: [Client 0] Assigned to server: localhost:9101
+2025/03/08 18:00:04 client.go:84: [Client 0] Sending task: Task#2_from_Client0 to server localhost:9101
+2025/03/08 18:00:05 client.go:94: [Client 0] Response from server: Result from server server2 for input 'Task#2_from_Client0'
+2025/03/08 18:00:05 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: least_load)
+2025/03/08 18:00:05 client.go:72: [Client 0] Assigned to server: localhost:9101
+2025/03/08 18:00:05 client.go:84: [Client 0] Sending task: Task#3_from_Client0 to server localhost:9101
+2025/03/08 18:00:06 client.go:94: [Client 0] Response from server: Result from server server2 for input 'Task#3_from_Client0'
+2025/03/08 18:00:06 client.go:62: [Client 0] Requesting best server from Load Balancer (Policy: least_load)
+2025/03/08 18:00:06 client.go:72: [Client 0] Assigned to server: localhost:9100
+2025/03/08 18:00:06 client.go:84: [Client 0] Sending task: Task#4_from_Client0 to server localhost:9100
+2025/03/08 18:00:08 client.go:94: [Client 0] Response from server: Result from server server1 for input 'Task#4_from_Client0'
+2025/03/08 18:00:09 client.go:102: [Client] All client requests completed.

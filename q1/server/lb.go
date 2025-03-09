@@ -2,37 +2,50 @@ package main
 
 import (
 	"context"
+	"flag"
+	"io"
 	"log"
 	"math"
 	"net"
+	"os"
+	"sort"
 	"sync"
 
 	"google.golang.org/grpc"
 	pb "github.com/Mrinal92/Distri-Assignment2/q1/protofiles"
 )
 
-// serverInfo holds registration and load details for a backend server.
 type serverInfo struct {
 	address string
 	load    float64
 }
 
-// loadBalancerServer implements pb.LoadBalancerServiceServer.
 type loadBalancerServer struct {
 	pb.UnimplementedLoadBalancerServiceServer
-
 	mu           sync.Mutex
-	servers      map[string]serverInfo // map of server_id -> serverInfo
+	servers      map[string]serverInfo
 	roundRobinIx int
+	policy       string
 }
 
-func newLoadBalancerServer() *loadBalancerServer {
+func newLoadBalancerServer(policy string) *loadBalancerServer {
 	return &loadBalancerServer{
 		servers: make(map[string]serverInfo),
+		policy:  policy,
 	}
 }
 
-// RegisterServer is called by a backend server to register itself.
+// setupLogging configures logging to both a file and stdout.
+func setupLogging() {
+	logFile, err := os.OpenFile("lb.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
+	if err != nil {
+		log.Fatalf("Failed to open log file lb.log: %v", err)
+	}
+	multiWriter := io.MultiWriter(logFile, os.Stdout)
+	log.SetOutput(multiWriter)
+	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
+}
+
 func (lb *loadBalancerServer) RegisterServer(ctx context.Context, req *pb.RegisterRequest) (*pb.RegisterResponse, error) {
 	lb.mu.Lock()
 	defer lb.mu.Unlock()
@@ -48,12 +61,12 @@ func (lb *loadBalancerServer) RegisterServer(ctx context.Context, req *pb.Regist
 	}, nil
 }
 
-// ReportLoad is called periodically by a backend server to update its load.
 func (lb *loadBalancerServer) ReportLoad(ctx context.Context, req *pb.LoadReportRequest) (*pb.LoadReportResponse, error) {
 	lb.mu.Lock()
 	defer lb.mu.Unlock()
 
 	if _, exists := lb.servers[req.GetServerId()]; !exists {
+		log.Printf("[LB] Error: Server %s attempted to report load but is not registered.", req.GetServerId())
 		return &pb.LoadReportResponse{
 			Success: false,
 			Message: "Server not registered",
@@ -63,20 +76,19 @@ func (lb *loadBalancerServer) ReportLoad(ctx context.Context, req *pb.LoadReport
 	si := lb.servers[req.GetServerId()]
 	si.load = float64(req.GetCurrentLoad())
 	lb.servers[req.GetServerId()] = si
-
-	log.Printf("[LB] Updated load for server %s: %.2f\n", req.GetServerId(), si.load)
+	log.Printf("[LB] Updated load for server %s: %.2f", req.GetServerId(), si.load)
 	return &pb.LoadReportResponse{
 		Success: true,
 		Message: "Load updated",
 	}, nil
 }
 
-// GetBestServer selects a backend server based on the requested policy.
 func (lb *loadBalancerServer) GetBestServer(ctx context.Context, req *pb.BestServerRequest) (*pb.BestServerResponse, error) {
 	lb.mu.Lock()
 	defer lb.mu.Unlock()
 
 	if len(lb.servers) == 0 {
+		log.Println("[LB] No servers available to process request.")
 		return &pb.BestServerResponse{
 			Success: false,
 			Address: "",
@@ -84,45 +96,20 @@ func (lb *loadBalancerServer) GetBestServer(ctx context.Context, req *pb.BestSer
 		}, nil
 	}
 
-	policy := req.GetPolicy()
 	var address string
-
-	switch policy {
+	switch lb.policy {
 	case "pick_first":
-		// Return the first available server.
-		for _, si := range lb.servers {
-			address = si.address
-			break
-		}
+		address = lb.pickFirst()
 	case "round_robin":
-		// Use a round-robin strategy.
-		keys := make([]string, 0, len(lb.servers))
-		for k := range lb.servers {
-			keys = append(keys, k)
-		}
-		serverID := keys[lb.roundRobinIx%len(keys)]
-		lb.roundRobinIx++
-		address = lb.servers[serverID].address
+		address = lb.roundRobin()
 	case "least_load":
-		// Find the server with the minimum load.
-		minLoad := math.MaxFloat64
-		var minServerID string
-		for id, si := range lb.servers {
-			if si.load < minLoad {
-				minLoad = si.load
-				minServerID = id
-			}
-		}
-		address = lb.servers[minServerID].address
+		address = lb.leastLoad()
 	default:
-		// Default to pick_first if the policy is unknown.
-		for _, si := range lb.servers {
-			address = si.address
-			break
-		}
+		log.Printf("[LB] Unknown policy '%s', defaulting to pick_first", lb.policy)
+		address = lb.pickFirst()
 	}
 
-	log.Printf("[LB] Policy=%s -> Chosen server: %s\n", policy, address)
+	log.Printf("[LB] Policy=%s -> Assigned server: %s\n", lb.policy, address)
 	return &pb.BestServerResponse{
 		Success: true,
 		Address: address,
@@ -130,17 +117,57 @@ func (lb *loadBalancerServer) GetBestServer(ctx context.Context, req *pb.BestSer
 	}, nil
 }
 
-func main() {
-	lis, err := net.Listen("tcp", ":9000")
-	if err != nil {
-		log.Fatalf("Failed to listen: %v", err)
+func (lb *loadBalancerServer) pickFirst() string {
+	for _, si := range lb.servers {
+		return si.address
 	}
-	grpcServer := grpc.NewServer()
-	lbServer := newLoadBalancerServer()
+	return ""
+}
 
+func (lb *loadBalancerServer) roundRobin() string {
+	keys := make([]string, 0, len(lb.servers))
+	for k := range lb.servers {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	serverID := keys[lb.roundRobinIx%len(keys)]
+	lb.roundRobinIx = (lb.roundRobinIx + 1) % len(keys)
+	log.Printf("[LB] Round Robin -> Selected server: %s", lb.servers[serverID].address)
+	return lb.servers[serverID].address
+}
+
+func (lb *loadBalancerServer) leastLoad() string {
+	minLoad := math.MaxFloat64
+	var minServerID string
+	for id, si := range lb.servers {
+		if si.load < minLoad {
+			minLoad = si.load
+			minServerID = id
+		}
+	}
+	log.Printf("[LB] Least Load -> Selected server: %s with load %.2f", lb.servers[minServerID].address, minLoad)
+	return lb.servers[minServerID].address
+}
+
+var (
+	portFlag   = flag.String("port", "9000", "Port to run the Load Balancer on")
+	policyFlag = flag.String("policy", "round_robin", "Load balancing policy: pick_first, round_robin, least_load")
+)
+
+func main() {
+	flag.Parse()
+	setupLogging()
+
+	lis, err := net.Listen("tcp", ":"+*portFlag)
+	if err != nil {
+		log.Fatalf("Failed to listen on port %s: %v", *portFlag, err)
+	}
+
+	lbServer := newLoadBalancerServer(*policyFlag)
+	grpcServer := grpc.NewServer()
 	pb.RegisterLoadBalancerServiceServer(grpcServer, lbServer)
 
-	log.Printf("Load Balancer listening on :9000")
+	log.Printf("[LB] Load Balancer listening on :%s with policy: %s", *portFlag, *policyFlag)
 	if err := grpcServer.Serve(lis); err != nil {
 		log.Fatalf("Failed to serve: %v", err)
 	}

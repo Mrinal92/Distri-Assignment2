@@ -1,0 +1,306 @@
+2025/03/09 17:16:18 server.go:143: [Server server3] Backend Server listening on port 9102
+2025/03/09 17:16:18 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:16:18 server.go:87: [Server server3] Successfully registered with LB at localhost:9000
+2025/03/09 17:16:20 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:16:22 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:16:24 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:16:26 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:16:27 server.go:47: [Server server3] Received task: heavy:Task#0_from_Client1
+2025/03/09 17:16:27 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:27 server.go:61: [Server server3] Completed task: heavy:Task#0_from_Client1
+2025/03/09 17:16:27 server.go:47: [Server server3] Received task: heavy:Task#2_from_Client1
+2025/03/09 17:16:27 server.go:47: [Server server3] Received task: heavy:Task#2_from_Client0
+2025/03/09 17:16:27 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:27 server.go:61: [Server server3] Completed task: heavy:Task#2_from_Client1
+2025/03/09 17:16:27 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:27 server.go:61: [Server server3] Completed task: heavy:Task#2_from_Client0
+2025/03/09 17:16:27 server.go:47: [Server server3] Received task: regular:Task#0_from_Client0
+2025/03/09 17:16:28 server.go:47: [Server server3] Received task: heavy:Task#3_from_Client1
+2025/03/09 17:16:28 server.go:47: [Server server3] Received task: regular:Task#1_from_Client1
+2025/03/09 17:16:28 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:28 server.go:61: [Server server3] Completed task: heavy:Task#3_from_Client1
+2025/03/09 17:16:28 server.go:112: [Server server3] Reported load: 2.00
+2025/03/09 17:16:28 server.go:61: [Server server3] Completed task: regular:Task#0_from_Client0
+2025/03/09 17:16:28 server.go:61: [Server server3] Completed task: regular:Task#1_from_Client1
+2025/03/09 17:16:30 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:16:30 server.go:47: [Server server3] Received task: heavy:Task#4_from_Client0
+2025/03/09 17:16:30 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:30 server.go:61: [Server server3] Completed task: heavy:Task#4_from_Client0
+2025/03/09 17:16:31 server.go:47: [Server server3] Received task: heavy:Task#7_from_Client1
+2025/03/09 17:16:31 server.go:47: [Server server3] Received task: heavy:Task#7_from_Client0
+2025/03/09 17:16:31 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:31 server.go:61: [Server server3] Completed task: heavy:Task#7_from_Client1
+2025/03/09 17:16:31 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:31 server.go:61: [Server server3] Completed task: heavy:Task#7_from_Client0
+2025/03/09 17:16:31 server.go:47: [Server server3] Received task: heavy:Task#4_from_Client1
+2025/03/09 17:16:31 server.go:47: [Server server3] Received task: heavy:Task#4_from_Client0
+2025/03/09 17:16:31 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:31 server.go:61: [Server server3] Completed task: heavy:Task#4_from_Client1
+2025/03/09 17:16:31 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:31 server.go:61: [Server server3] Completed task: heavy:Task#4_from_Client0
+2025/03/09 17:16:31 server.go:47: [Server server3] Received task: heavy:Task#6_from_Client1
+2025/03/09 17:16:31 server.go:47: [Server server3] Received task: regular:Task#2_from_Client1
+2025/03/09 17:16:31 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:31 server.go:61: [Server server3] Completed task: heavy:Task#6_from_Client1
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: heavy:Task#3_from_Client0
+2025/03/09 17:16:32 server.go:61: [Server server3] Completed task: regular:Task#2_from_Client1
+2025/03/09 17:16:32 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:32 server.go:61: [Server server3] Completed task: heavy:Task#3_from_Client0
+2025/03/09 17:16:32 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: regular:Task#2_from_Client0
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: heavy:Task#7_from_Client0
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: regular:Task#5_from_Client0
+2025/03/09 17:16:32 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:32 server.go:61: [Server server3] Completed task: heavy:Task#7_from_Client0
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: heavy:Task#9_from_Client1
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: regular:Task#2_from_Client0
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: heavy:Task#9_from_Client0
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: regular:Task#3_from_Client1
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: heavy:Task#4_from_Client0
+2025/03/09 17:16:32 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:32 server.go:61: [Server server3] Completed task: heavy:Task#9_from_Client1
+2025/03/09 17:16:32 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:32 server.go:61: [Server server3] Completed task: heavy:Task#9_from_Client0
+2025/03/09 17:16:32 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:32 server.go:61: [Server server3] Completed task: heavy:Task#4_from_Client0
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: regular:Task#4_from_Client1
+2025/03/09 17:16:32 server.go:61: [Server server3] Completed task: regular:Task#4_from_Client1
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: regular:Task#5_from_Client0
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: heavy:Task#6_from_Client1
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: heavy:Task#6_from_Client0
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: regular:Task#5_from_Client1
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: heavy:Task#11_from_Client1
+2025/03/09 17:16:32 server.go:47: [Server server3] Received task: heavy:Task#11_from_Client0
+2025/03/09 17:16:32 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:32 server.go:61: [Server server3] Completed task: heavy:Task#6_from_Client1
+2025/03/09 17:16:32 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:32 server.go:61: [Server server3] Completed task: heavy:Task#6_from_Client0
+2025/03/09 17:16:32 server.go:61: [Server server3] Completed task: regular:Task#2_from_Client0
+2025/03/09 17:16:32 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:32 server.go:61: [Server server3] Completed task: heavy:Task#11_from_Client1
+2025/03/09 17:16:32 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:32 server.go:61: [Server server3] Completed task: heavy:Task#11_from_Client0
+2025/03/09 17:16:32 server.go:61: [Server server3] Completed task: regular:Task#2_from_Client0
+2025/03/09 17:16:33 server.go:47: [Server server3] Received task: heavy:Task#8_from_Client1
+2025/03/09 17:16:33 server.go:47: [Server server3] Received task: regular:Task#2_from_Client1
+2025/03/09 17:16:33 server.go:47: [Server server3] Received task: heavy:Task#8_from_Client0
+2025/03/09 17:16:33 server.go:61: [Server server3] Completed task: regular:Task#5_from_Client0
+2025/03/09 17:16:33 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:33 server.go:61: [Server server3] Completed task: heavy:Task#8_from_Client1
+2025/03/09 17:16:33 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:33 server.go:61: [Server server3] Completed task: heavy:Task#8_from_Client0
+2025/03/09 17:16:33 server.go:47: [Server server3] Received task: heavy:Task#10_from_Client1
+2025/03/09 17:16:33 server.go:61: [Server server3] Completed task: regular:Task#5_from_Client0
+2025/03/09 17:16:33 server.go:47: [Server server3] Received task: regular:Task#6_from_Client1
+2025/03/09 17:16:33 server.go:47: [Server server3] Received task: heavy:Task#10_from_Client0
+2025/03/09 17:16:33 server.go:47: [Server server3] Received task: heavy:Task#5_from_Client1
+2025/03/09 17:16:33 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:33 server.go:61: [Server server3] Completed task: heavy:Task#10_from_Client1
+2025/03/09 17:16:33 server.go:47: [Server server3] Received task: heavy:Task#5_from_Client0
+2025/03/09 17:16:33 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:33 server.go:61: [Server server3] Completed task: heavy:Task#10_from_Client0
+2025/03/09 17:16:33 server.go:61: [Server server3] Completed task: regular:Task#6_from_Client1
+2025/03/09 17:16:33 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:33 server.go:61: [Server server3] Completed task: heavy:Task#5_from_Client1
+2025/03/09 17:16:33 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:33 server.go:61: [Server server3] Completed task: heavy:Task#5_from_Client0
+2025/03/09 17:16:33 server.go:47: [Server server3] Received task: heavy:Task#12_from_Client0
+2025/03/09 17:16:33 server.go:47: [Server server3] Received task: regular:Task#3_from_Client0
+2025/03/09 17:16:33 server.go:61: [Server server3] Completed task: regular:Task#3_from_Client1
+2025/03/09 17:16:33 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:33 server.go:61: [Server server3] Completed task: heavy:Task#12_from_Client0
+2025/03/09 17:16:33 server.go:61: [Server server3] Completed task: regular:Task#2_from_Client1
+2025/03/09 17:16:33 server.go:61: [Server server3] Completed task: regular:Task#5_from_Client1
+2025/03/09 17:16:33 server.go:47: [Server server3] Received task: heavy:Task#6_from_Client1
+2025/03/09 17:16:33 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:33 server.go:61: [Server server3] Completed task: heavy:Task#6_from_Client1
+2025/03/09 17:16:34 server.go:47: [Server server3] Received task: heavy:Task#10_from_Client1
+2025/03/09 17:16:34 server.go:112: [Server server3] Reported load: 2.00
+2025/03/09 17:16:34 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:34 server.go:61: [Server server3] Completed task: heavy:Task#10_from_Client1
+2025/03/09 17:16:34 server.go:61: [Server server3] Completed task: regular:Task#3_from_Client0
+2025/03/09 17:16:36 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: regular:Task#6_from_Client0
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: heavy:Task#12_from_Client0
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: heavy:Task#17_from_Client1
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: heavy:Task#17_from_Client0
+2025/03/09 17:16:36 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:36 server.go:61: [Server server3] Completed task: heavy:Task#12_from_Client0
+2025/03/09 17:16:36 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:36 server.go:61: [Server server3] Completed task: heavy:Task#17_from_Client1
+2025/03/09 17:16:36 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:36 server.go:61: [Server server3] Completed task: heavy:Task#17_from_Client0
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: heavy:Task#14_from_Client1
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: heavy:Task#14_from_Client0
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: regular:Task#8_from_Client1
+2025/03/09 17:16:36 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:36 server.go:61: [Server server3] Completed task: heavy:Task#14_from_Client1
+2025/03/09 17:16:36 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:36 server.go:61: [Server server3] Completed task: heavy:Task#14_from_Client0
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: regular:Task#9_from_Client0
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: heavy:Task#16_from_Client1
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: regular:Task#8_from_Client0
+2025/03/09 17:16:36 server.go:61: [Server server3] Completed task: regular:Task#8_from_Client0
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: regular:Task#9_from_Client0
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: heavy:Task#16_from_Client0
+2025/03/09 17:16:36 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:36 server.go:61: [Server server3] Completed task: heavy:Task#16_from_Client1
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: heavy:Task#11_from_Client1
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: heavy:Task#11_from_Client0
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: regular:Task#9_from_Client1
+2025/03/09 17:16:36 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:36 server.go:61: [Server server3] Completed task: heavy:Task#16_from_Client0
+2025/03/09 17:16:36 server.go:61: [Server server3] Completed task: regular:Task#9_from_Client0
+2025/03/09 17:16:36 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:36 server.go:61: [Server server3] Completed task: heavy:Task#11_from_Client1
+2025/03/09 17:16:36 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:36 server.go:61: [Server server3] Completed task: heavy:Task#11_from_Client0
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: heavy:Task#13_from_Client1
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: heavy:Task#13_from_Client0
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: heavy:Task#18_from_Client1
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: heavy:Task#18_from_Client0
+2025/03/09 17:16:36 server.go:47: [Server server3] Received task: regular:Task#6_from_Client1
+2025/03/09 17:16:37 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: heavy:Task#13_from_Client1
+2025/03/09 17:16:37 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: heavy:Task#13_from_Client0
+2025/03/09 17:16:37 server.go:47: [Server server3] Received task: regular:Task#7_from_Client1
+2025/03/09 17:16:37 server.go:47: [Server server3] Received task: heavy:Task#15_from_Client1
+2025/03/09 17:16:37 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: heavy:Task#18_from_Client1
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: regular:Task#9_from_Client1
+2025/03/09 17:16:37 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: heavy:Task#18_from_Client0
+2025/03/09 17:16:37 server.go:47: [Server server3] Received task: heavy:Task#15_from_Client0
+2025/03/09 17:16:37 server.go:47: [Server server3] Received task: regular:Task#6_from_Client0
+2025/03/09 17:16:37 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: heavy:Task#15_from_Client1
+2025/03/09 17:16:37 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: heavy:Task#15_from_Client0
+2025/03/09 17:16:37 server.go:47: [Server server3] Received task: regular:Task#9_from_Client0
+2025/03/09 17:16:37 server.go:47: [Server server3] Received task: heavy:Task#17_from_Client1
+2025/03/09 17:16:37 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: heavy:Task#17_from_Client1
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: regular:Task#6_from_Client0
+2025/03/09 17:16:37 server.go:47: [Server server3] Received task: regular:Task#10_from_Client0
+2025/03/09 17:16:37 server.go:47: [Server server3] Received task: heavy:Task#12_from_Client1
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: regular:Task#9_from_Client0
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: regular:Task#6_from_Client1
+2025/03/09 17:16:37 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: heavy:Task#12_from_Client1
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: regular:Task#8_from_Client1
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: regular:Task#6_from_Client0
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: regular:Task#9_from_Client0
+2025/03/09 17:16:37 server.go:61: [Server server3] Completed task: regular:Task#7_from_Client1
+2025/03/09 17:16:37 server.go:47: [Server server3] Received task: regular:Task#7_from_Client0
+2025/03/09 17:16:38 server.go:61: [Server server3] Completed task: regular:Task#10_from_Client0
+2025/03/09 17:16:38 server.go:112: [Server server3] Reported load: 2.00
+2025/03/09 17:16:38 server.go:61: [Server server3] Completed task: regular:Task#7_from_Client0
+2025/03/09 17:16:42 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:16:42 server.go:47: [Server server3] Received task: regular:Task#13_from_Client1
+2025/03/09 17:16:43 server.go:61: [Server server3] Completed task: regular:Task#13_from_Client1
+2025/03/09 17:16:43 server.go:47: [Server server3] Received task: regular:Task#11_from_Client1
+2025/03/09 17:16:43 server.go:47: [Server server3] Received task: regular:Task#13_from_Client0
+2025/03/09 17:16:43 server.go:47: [Server server3] Received task: regular:Task#11_from_Client1
+2025/03/09 17:16:43 server.go:47: [Server server3] Received task: regular:Task#14_from_Client1
+2025/03/09 17:16:43 server.go:47: [Server server3] Received task: heavy:Task#19_from_Client1
+2025/03/09 17:16:43 server.go:47: [Server server3] Received task: heavy:Task#19_from_Client0
+2025/03/09 17:16:43 server.go:47: [Server server3] Received task: regular:Task#15_from_Client0
+2025/03/09 17:16:44 server.go:47: [Server server3] Received task: regular:Task#14_from_Client0
+2025/03/09 17:16:44 server.go:47: [Server server3] Received task: regular:Task#13_from_Client1
+2025/03/09 17:16:44 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:44 server.go:61: [Server server3] Completed task: heavy:Task#19_from_Client1
+2025/03/09 17:16:44 server.go:54: [Server server3] Heavy task computed sum: 450000000
+2025/03/09 17:16:44 server.go:61: [Server server3] Completed task: heavy:Task#19_from_Client0
+2025/03/09 17:16:44 server.go:47: [Server server3] Received task: regular:Task#11_from_Client0
+2025/03/09 17:16:44 server.go:61: [Server server3] Completed task: regular:Task#11_from_Client0
+2025/03/09 17:16:44 server.go:61: [Server server3] Completed task: regular:Task#11_from_Client1
+2025/03/09 17:16:44 server.go:61: [Server server3] Completed task: regular:Task#11_from_Client1
+2025/03/09 17:16:44 server.go:47: [Server server3] Received task: regular:Task#15_from_Client1
+2025/03/09 17:16:44 server.go:61: [Server server3] Completed task: regular:Task#14_from_Client1
+2025/03/09 17:16:44 server.go:112: [Server server3] Reported load: 5.00
+2025/03/09 17:16:44 server.go:61: [Server server3] Completed task: regular:Task#15_from_Client0
+2025/03/09 17:16:44 server.go:61: [Server server3] Completed task: regular:Task#13_from_Client0
+2025/03/09 17:16:44 server.go:61: [Server server3] Completed task: regular:Task#15_from_Client1
+2025/03/09 17:16:44 server.go:61: [Server server3] Completed task: regular:Task#13_from_Client1
+2025/03/09 17:16:44 server.go:61: [Server server3] Completed task: regular:Task#14_from_Client0
+2025/03/09 17:16:46 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:16:47 server.go:47: [Server server3] Received task: regular:Task#17_from_Client1
+2025/03/09 17:16:47 server.go:47: [Server server3] Received task: regular:Task#19_from_Client0
+2025/03/09 17:16:47 server.go:61: [Server server3] Completed task: regular:Task#19_from_Client0
+2025/03/09 17:16:47 server.go:47: [Server server3] Received task: regular:Task#18_from_Client1
+2025/03/09 17:16:48 server.go:61: [Server server3] Completed task: regular:Task#18_from_Client1
+2025/03/09 17:16:48 server.go:47: [Server server3] Received task: regular:Task#15_from_Client1
+2025/03/09 17:16:48 server.go:47: [Server server3] Received task: regular:Task#17_from_Client0
+2025/03/09 17:16:48 server.go:61: [Server server3] Completed task: regular:Task#17_from_Client0
+2025/03/09 17:16:48 server.go:47: [Server server3] Received task: regular:Task#16_from_Client1
+2025/03/09 17:16:48 server.go:47: [Server server3] Received task: regular:Task#15_from_Client0
+2025/03/09 17:16:48 server.go:47: [Server server3] Received task: regular:Task#18_from_Client0
+2025/03/09 17:16:48 server.go:61: [Server server3] Completed task: regular:Task#15_from_Client0
+2025/03/09 17:16:48 server.go:61: [Server server3] Completed task: regular:Task#18_from_Client0
+2025/03/09 17:16:48 server.go:47: [Server server3] Received task: regular:Task#19_from_Client1
+2025/03/09 17:16:48 server.go:112: [Server server3] Reported load: 4.00
+2025/03/09 17:16:48 server.go:61: [Server server3] Completed task: regular:Task#17_from_Client1
+2025/03/09 17:16:48 server.go:61: [Server server3] Completed task: regular:Task#15_from_Client1
+2025/03/09 17:16:49 server.go:61: [Server server3] Completed task: regular:Task#19_from_Client1
+2025/03/09 17:16:49 server.go:61: [Server server3] Completed task: regular:Task#16_from_Client1
+2025/03/09 17:16:50 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:16:51 server.go:47: [Server server3] Received task: regular:Task#16_from_Client0
+2025/03/09 17:16:51 server.go:47: [Server server3] Received task: regular:Task#19_from_Client0
+2025/03/09 17:16:51 server.go:61: [Server server3] Completed task: regular:Task#16_from_Client0
+2025/03/09 17:16:51 server.go:61: [Server server3] Completed task: regular:Task#19_from_Client0
+2025/03/09 17:16:52 server.go:47: [Server server3] Received task: regular:Task#17_from_Client0
+2025/03/09 17:16:52 server.go:112: [Server server3] Reported load: 1.00
+2025/03/09 17:16:52 server.go:61: [Server server3] Completed task: regular:Task#17_from_Client0
+2025/03/09 17:16:54 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:16:56 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:16:58 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:00 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:02 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:04 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:06 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:08 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:10 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:12 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:16 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:18 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:20 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:22 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:24 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:26 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:28 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:30 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:32 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:34 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:36 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:38 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:40 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:42 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:44 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:46 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:49 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:51 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:53 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:55 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:57 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:17:59 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:18:01 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:18:03 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:18:05 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:18:07 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:18:09 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:18:11 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:18:13 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:18:15 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:18:17 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:18:19 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:18:23 server.go:112: [Server server3] Reported load: 0.00
+2025/03/09 17:18:25 server.go:108: [Server server3] ReportLoad error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused", retrying in 5 seconds...
+2025/03/09 17:18:30 server.go:108: [Server server3] ReportLoad error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused", retrying in 5 seconds...
+2025/03/09 17:18:35 server.go:108: [Server server3] ReportLoad error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused", retrying in 5 seconds...
+2025/03/09 17:18:41 server.go:108: [Server server3] ReportLoad error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused", retrying in 5 seconds...
+2025/03/09 17:18:46 server.go:108: [Server server3] ReportLoad error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused", retrying in 5 seconds...
+2025/03/09 17:18:51 server.go:108: [Server server3] ReportLoad error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused", retrying in 5 seconds...
+2025/03/09 17:18:57 server.go:108: [Server server3] ReportLoad error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused", retrying in 5 seconds...
+2025/03/09 17:19:02 server.go:108: [Server server3] ReportLoad error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused", retrying in 5 seconds...
+2025/03/09 17:19:07 server.go:108: [Server server3] ReportLoad error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:9000: connect: connection refused", retrying in 5 seconds...

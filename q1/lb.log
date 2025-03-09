@@ -1,0 +1,1047 @@
+2025/03/09 17:16:14 lb.go:170: [LB] Load Balancer listening on :9000 with policy: least_load
+2025/03/09 17:16:16 lb.go:57: [LB] Registered server server1 at address localhost:9100
+2025/03/09 17:16:16 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:16:17 lb.go:57: [LB] Registered server server2 at address localhost:9101
+2025/03/09 17:16:17 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:16:18 lb.go:69: [LB] Error: Server server3 attempted to report load but is not registered.
+2025/03/09 17:16:18 lb.go:57: [LB] Registered server server3 at address localhost:9102
+2025/03/09 17:16:18 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:16:19 lb.go:57: [LB] Registered server server4 at address localhost:9103
+2025/03/09 17:16:19 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:16:19 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:16:20 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:16:20 lb.go:69: [LB] Error: Server server5 attempted to report load but is not registered.
+2025/03/09 17:16:20 lb.go:57: [LB] Registered server server5 at address localhost:9104
+2025/03/09 17:16:20 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:16:21 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:16:21 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:16:22 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:16:22 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:16:22 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:16:23 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:16:23 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:16:24 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:16:24 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:16:24 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:16:25 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:16:25 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:16:26 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:16:26 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:16:26 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:26 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:26 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:26 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:26 lb.go:79: [LB] Updated load for server server1: 1.00
+2025/03/09 17:16:26 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:26 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:26 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:26 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:26 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:26 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:26 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:26 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:27 lb.go:79: [LB] Updated load for server server4: 1.00
+2025/03/09 17:16:27 lb.go:79: [LB] Updated load for server server2: 1.00
+2025/03/09 17:16:27 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:27 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:27 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:27 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:27 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:27 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:27 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:27 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:27 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:27 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:27 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:27 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:27 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:27 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:27 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:27 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:28 lb.go:79: [LB] Updated load for server server3: 2.00
+2025/03/09 17:16:28 lb.go:79: [LB] Updated load for server server5: 1.00
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 1.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 1.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:28 lb.go:79: [LB] Updated load for server server1: 1.00
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 1.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 1.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 1.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 1.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 1.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 1.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 1.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 1.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 1.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:28 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 1.00
+2025/03/09 17:16:28 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 1.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 1.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 1.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:29 lb.go:79: [LB] Updated load for server server4: 2.00
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 1.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 1.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:29 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:29 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:29 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:30 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:30 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:30 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:30 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:30 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:31 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:31 lb.go:79: [LB] Updated load for server server2: 1.00
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:31 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:31 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:32 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:32 lb.go:79: [LB] Updated load for server server5: 1.00
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:79: [LB] Updated load for server server1: 3.00
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:32 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:32 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:33 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:33 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:33 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:33 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:34 lb.go:79: [LB] Updated load for server server3: 2.00
+2025/03/09 17:16:34 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:34 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:34 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:34 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:35 lb.go:79: [LB] Updated load for server server4: 3.00
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:79: [LB] Updated load for server server2: 3.00
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:35 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:35 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:36 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:16:36 lb.go:79: [LB] Updated load for server server5: 3.00
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:79: [LB] Updated load for server server1: 4.00
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:36 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:36 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:37 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:37 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:37 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:37 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:38 lb.go:79: [LB] Updated load for server server3: 2.00
+2025/03/09 17:16:38 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:38 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:38 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:38 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:41 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:41 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:41 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:41 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:41 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:41 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:41 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:41 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:41 lb.go:79: [LB] Updated load for server server4: 1.00
+2025/03/09 17:16:41 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:41 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:41 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:16:41 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:41 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:41 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:41 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:41 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:41 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:41 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:41 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:41 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:41 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:41 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:41 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:41 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:41 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:41 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:41 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:41 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:41 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:42 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:42 lb.go:79: [LB] Updated load for server server5: 1.00
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:42 lb.go:79: [LB] Updated load for server server1: 3.00
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:42 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:42 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:43 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:43 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:43 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:43 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:43 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:43 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:43 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:43 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:43 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:43 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:43 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:43 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:43 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:16:43 lb.go:79: [LB] Updated load for server server2: 2.00
+2025/03/09 17:16:43 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:43 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:43 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:43 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:43 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:43 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:43 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:43 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:43 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:43 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:43 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:43 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:43 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:43 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:44 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:44 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:44 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:44 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:44 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:44 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:44 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:44 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:44 lb.go:79: [LB] Updated load for server server3: 5.00
+2025/03/09 17:16:44 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:16:44 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:44 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:44 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:16:44 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:44 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:44 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:44 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:45 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:45 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:45 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:45 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:45 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:45 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:45 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:45 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:45 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:45 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:45 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:45 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:45 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:45 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:45 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:45 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:45 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:45 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:45 lb.go:79: [LB] Updated load for server server4: 2.00
+2025/03/09 17:16:45 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:16:45 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:45 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:46 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:46 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:46 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:46 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:46 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:46 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:46 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:46 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:46 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:46 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:46 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:46 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:46 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:46 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:46 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:46 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:46 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:16:46 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:16:46 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:46 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:46 lb.go:79: [LB] Updated load for server server1: 2.00
+2025/03/09 17:16:46 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:46 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:46 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:46 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:47 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:47 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:47 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:47 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:47 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:47 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:47 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:47 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:47 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:47 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:47 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:47 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:47 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:47 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:47 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:16:47 lb.go:79: [LB] Updated load for server server2: 2.00
+2025/03/09 17:16:47 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:47 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:47 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:47 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:47 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:47 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:48 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:48 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:48 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:48 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:48 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:48 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:48 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:48 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:48 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:48 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:48 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:48 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:48 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:48 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:48 lb.go:79: [LB] Updated load for server server3: 4.00
+2025/03/09 17:16:48 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:16:48 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:16:48 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:48 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:48 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:48 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:49 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:49 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:49 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:49 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:49 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:49 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:49 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:49 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:49 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:49 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:49 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:49 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:49 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:49 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:49 lb.go:79: [LB] Updated load for server server4: 3.00
+2025/03/09 17:16:49 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:16:49 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:49 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:50 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:50 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:50 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:50 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:50 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:50 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:50 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:16:50 lb.go:79: [LB] Updated load for server server5: 1.00
+2025/03/09 17:16:50 lb.go:79: [LB] Updated load for server server1: 2.00
+2025/03/09 17:16:51 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:51 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:51 lb.go:148: [LB] Least Load -> Selected server: localhost:9101 with load 0.00
+2025/03/09 17:16:51 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9101
+2025/03/09 17:16:51 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:51 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:51 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:16:51 lb.go:79: [LB] Updated load for server server2: 1.00
+2025/03/09 17:16:51 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:51 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:52 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:52 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:52 lb.go:148: [LB] Least Load -> Selected server: localhost:9102 with load 0.00
+2025/03/09 17:16:52 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9102
+2025/03/09 17:16:52 lb.go:79: [LB] Updated load for server server3: 1.00
+2025/03/09 17:16:52 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:16:52 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:16:53 lb.go:148: [LB] Least Load -> Selected server: localhost:9100 with load 0.00
+2025/03/09 17:16:53 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9100
+2025/03/09 17:16:53 lb.go:148: [LB] Least Load -> Selected server: localhost:9103 with load 0.00
+2025/03/09 17:16:53 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9103
+2025/03/09 17:16:53 lb.go:79: [LB] Updated load for server server4: 1.00
+2025/03/09 17:16:53 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:16:54 lb.go:148: [LB] Least Load -> Selected server: localhost:9104 with load 0.00
+2025/03/09 17:16:54 lb.go:112: [LB] Policy=least_load -> Assigned server: localhost:9104
+2025/03/09 17:16:54 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:16:54 lb.go:79: [LB] Updated load for server server5: 1.00
+2025/03/09 17:16:54 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:16:55 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:16:55 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:16:56 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:16:56 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:16:56 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:16:57 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:16:57 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:16:58 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:16:58 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:16:58 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:16:59 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:16:59 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:00 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:00 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:00 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:01 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:01 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:02 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:02 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:02 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:03 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:03 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:04 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:04 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:04 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:05 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:05 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:06 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:06 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:06 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:07 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:07 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:08 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:08 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:08 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:09 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:09 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:10 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:10 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:10 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:11 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:11 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:12 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:12 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:12 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:15 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:15 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:16 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:16 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:16 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:17 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:17 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:18 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:18 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:18 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:19 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:19 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:20 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:20 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:20 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:21 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:21 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:22 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:22 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:22 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:23 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:23 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:24 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:24 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:24 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:25 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:25 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:26 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:26 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:26 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:27 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:27 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:28 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:28 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:28 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:29 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:29 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:30 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:30 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:30 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:31 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:31 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:32 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:32 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:32 lb.go:79: [LB] Updated load for server server1: 0.00
+2025/03/09 17:17:33 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:33 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:34 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:34 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:35 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:35 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:36 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:36 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:37 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:37 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:38 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:38 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:39 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:39 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:40 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:40 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:41 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:41 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:42 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:42 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:43 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:43 lb.go:79: [LB] Updated load for server server2: 0.00
+2025/03/09 17:17:44 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:44 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:45 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:46 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:46 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:47 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:49 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:49 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:50 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:51 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:51 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:52 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:53 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:53 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:54 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:55 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:55 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:56 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:57 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:17:57 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:58 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:17:59 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:17:59 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:18:00 lb.go:79: [LB] Updated load for server server4: 0.00
+2025/03/09 17:18:01 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:18:01 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:18:03 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:18:03 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:18:05 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:18:05 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:18:07 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:18:07 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:18:09 lb.go:79: [LB] Updated load for server server5: 0.00
+2025/03/09 17:18:09 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:18:11 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:18:13 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:18:15 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:18:17 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:18:19 lb.go:79: [LB] Updated load for server server3: 0.00
+2025/03/09 17:18:23 lb.go:79: [LB] Updated load for server server3: 0.00

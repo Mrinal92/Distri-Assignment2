@@ -1,0 +1,1630 @@
+2025/03/09 17:16:26 client.go:42: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/09 17:16:26 client.go:49: [Client] Successfully connected to Load Balancer!
+2025/03/09 17:16:26 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:26 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:26 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:26 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:26 client.go:79: [Client 0] Sending task: heavy:Task#0_from_Client0 to server localhost:9100
+2025/03/09 17:16:26 client.go:79: [Client 1] Sending task: heavy:Task#0_from_Client1 to server localhost:9104
+2025/03/09 17:16:26 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#0_from_Client0'
+2025/03/09 17:16:26 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#0_from_Client1'
+2025/03/09 17:16:26 client.go:42: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/09 17:16:26 client.go:49: [Client] Successfully connected to Load Balancer!
+2025/03/09 17:16:26 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:26 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:26 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:26 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:26 client.go:79: [Client 1] Sending task: regular:Task#0_from_Client1 to server localhost:9103
+2025/03/09 17:16:26 client.go:79: [Client 0] Sending task: regular:Task#0_from_Client0 to server localhost:9101
+2025/03/09 17:16:26 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:26 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:26 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:26 client.go:79: [Client 1] Sending task: heavy:Task#1_from_Client1 to server localhost:9103
+2025/03/09 17:16:26 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:26 client.go:79: [Client 0] Sending task: heavy:Task#1_from_Client0 to server localhost:9101
+2025/03/09 17:16:26 client.go:87: [Client 1] Response from server: Result from server server4 for input 'heavy:Task#1_from_Client1'
+2025/03/09 17:16:26 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#1_from_Client0'
+2025/03/09 17:16:27 client.go:42: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/09 17:16:27 client.go:49: [Client] Successfully connected to Load Balancer!
+2025/03/09 17:16:27 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:27 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:27 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:27 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:27 client.go:79: [Client 1] Sending task: heavy:Task#0_from_Client1 to server localhost:9102
+2025/03/09 17:16:27 client.go:79: [Client 0] Sending task: heavy:Task#0_from_Client0 to server localhost:9104
+2025/03/09 17:16:27 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#0_from_Client0'
+2025/03/09 17:16:27 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#0_from_Client1'
+2025/03/09 17:16:27 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:27 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:27 client.go:79: [Client 1] Sending task: heavy:Task#2_from_Client1 to server localhost:9102
+2025/03/09 17:16:27 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:27 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:27 client.go:79: [Client 0] Sending task: heavy:Task#2_from_Client0 to server localhost:9102
+2025/03/09 17:16:27 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#2_from_Client1'
+2025/03/09 17:16:27 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#2_from_Client0'
+2025/03/09 17:16:27 client.go:87: [Client 1] Response from server: Result from server server4 for input 'regular:Task#0_from_Client1'
+2025/03/09 17:16:27 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#0_from_Client0'
+2025/03/09 17:16:27 client.go:42: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/09 17:16:27 client.go:49: [Client] Successfully connected to Load Balancer!
+2025/03/09 17:16:27 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:27 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:27 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:27 client.go:79: [Client 1] Sending task: regular:Task#0_from_Client1 to server localhost:9104
+2025/03/09 17:16:27 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:27 client.go:79: [Client 0] Sending task: regular:Task#0_from_Client0 to server localhost:9102
+2025/03/09 17:16:27 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:27 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:27 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:27 client.go:79: [Client 0] Sending task: heavy:Task#1_from_Client0 to server localhost:9104
+2025/03/09 17:16:27 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:27 client.go:79: [Client 1] Sending task: heavy:Task#1_from_Client1 to server localhost:9104
+2025/03/09 17:16:27 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#1_from_Client1'
+2025/03/09 17:16:27 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#1_from_Client0'
+2025/03/09 17:16:28 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:28 client.go:79: [Client 1] Sending task: heavy:Task#3_from_Client1 to server localhost:9102
+2025/03/09 17:16:28 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:28 client.go:79: [Client 0] Sending task: heavy:Task#3_from_Client0 to server localhost:9104
+2025/03/09 17:16:28 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:28 client.go:79: [Client 1] Sending task: regular:Task#1_from_Client1 to server localhost:9102
+2025/03/09 17:16:28 client.go:87: [Client 1] Response from server: Result from server server5 for input 'regular:Task#0_from_Client1'
+2025/03/09 17:16:28 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:28 client.go:79: [Client 0] Sending task: regular:Task#1_from_Client0 to server localhost:9104
+2025/03/09 17:16:28 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#3_from_Client1'
+2025/03/09 17:16:28 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#3_from_Client0'
+2025/03/09 17:16:28 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#0_from_Client0'
+2025/03/09 17:16:28 client.go:42: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/09 17:16:28 client.go:49: [Client] Successfully connected to Load Balancer!
+2025/03/09 17:16:28 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:28 client.go:79: [Client 0] Sending task: heavy:Task#0_from_Client0 to server localhost:9104
+2025/03/09 17:16:28 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:28 client.go:79: [Client 1] Sending task: heavy:Task#0_from_Client1 to server localhost:9100
+2025/03/09 17:16:28 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#0_from_Client1'
+2025/03/09 17:16:28 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#0_from_Client0'
+2025/03/09 17:16:28 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:28 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:79: [Client 1] Sending task: heavy:Task#2_from_Client1 to server localhost:9100
+2025/03/09 17:16:28 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:28 client.go:79: [Client 0] Sending task: heavy:Task#2_from_Client0 to server localhost:9100
+2025/03/09 17:16:28 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#2_from_Client1'
+2025/03/09 17:16:28 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#2_from_Client0'
+2025/03/09 17:16:28 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:28 client.go:79: [Client 1] Sending task: regular:Task#1_from_Client1 to server localhost:9100
+2025/03/09 17:16:28 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#1_from_Client1'
+2025/03/09 17:16:28 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:28 client.go:79: [Client 1] Sending task: heavy:Task#4_from_Client1 to server localhost:9100
+2025/03/09 17:16:28 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:28 client.go:79: [Client 0] Sending task: heavy:Task#4_from_Client0 to server localhost:9100
+2025/03/09 17:16:28 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#4_from_Client1'
+2025/03/09 17:16:28 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:28 client.go:79: [Client 0] Sending task: regular:Task#1_from_Client0 to server localhost:9100
+2025/03/09 17:16:28 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#4_from_Client0'
+2025/03/09 17:16:28 client.go:42: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/09 17:16:28 client.go:49: [Client] Successfully connected to Load Balancer!
+2025/03/09 17:16:28 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:28 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:28 client.go:79: [Client 1] Sending task: regular:Task#0_from_Client1 to server localhost:9103
+2025/03/09 17:16:28 client.go:79: [Client 0] Sending task: regular:Task#0_from_Client0 to server localhost:9103
+2025/03/09 17:16:28 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:28 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:28 client.go:79: [Client 1] Sending task: heavy:Task#1_from_Client1 to server localhost:9101
+2025/03/09 17:16:28 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:28 client.go:79: [Client 0] Sending task: heavy:Task#1_from_Client0 to server localhost:9103
+2025/03/09 17:16:28 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#1_from_Client1'
+2025/03/09 17:16:28 client.go:87: [Client 0] Response from server: Result from server server4 for input 'heavy:Task#1_from_Client0'
+2025/03/09 17:16:28 client.go:87: [Client 0] Response from server: Result from server server5 for input 'regular:Task#1_from_Client0'
+2025/03/09 17:16:29 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 1] Sending task: heavy:Task#3_from_Client1 to server localhost:9101
+2025/03/09 17:16:29 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:29 client.go:79: [Client 0] Sending task: heavy:Task#3_from_Client0 to server localhost:9103
+2025/03/09 17:16:29 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#1_from_Client0'
+2025/03/09 17:16:29 client.go:87: [Client 0] Response from server: Result from server server4 for input 'heavy:Task#3_from_Client0'
+2025/03/09 17:16:29 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#3_from_Client1'
+2025/03/09 17:16:29 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:29 client.go:79: [Client 1] Sending task: regular:Task#2_from_Client1 to server localhost:9103
+2025/03/09 17:16:29 client.go:87: [Client 1] Response from server: Result from server server4 for input 'regular:Task#0_from_Client1'
+2025/03/09 17:16:29 client.go:42: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/09 17:16:29 client.go:49: [Client] Successfully connected to Load Balancer!
+2025/03/09 17:16:29 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:29 client.go:79: [Client 0] Sending task: heavy:Task#0_from_Client0 to server localhost:9104
+2025/03/09 17:16:29 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:29 client.go:79: [Client 1] Sending task: heavy:Task#0_from_Client1 to server localhost:9104
+2025/03/09 17:16:29 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 1] Sending task: heavy:Task#5_from_Client1 to server localhost:9101
+2025/03/09 17:16:29 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#0_from_Client0'
+2025/03/09 17:16:29 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 0] Sending task: heavy:Task#5_from_Client0 to server localhost:9101
+2025/03/09 17:16:29 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#0_from_Client1'
+2025/03/09 17:16:29 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#0_from_Client0'
+2025/03/09 17:16:29 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#5_from_Client1'
+2025/03/09 17:16:29 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#5_from_Client0'
+2025/03/09 17:16:29 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 1] Sending task: heavy:Task#2_from_Client1 to server localhost:9101
+2025/03/09 17:16:29 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 0] Sending task: heavy:Task#2_from_Client0 to server localhost:9101
+2025/03/09 17:16:29 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 0] Sending task: regular:Task#2_from_Client0 to server localhost:9101
+2025/03/09 17:16:29 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 0] Sending task: regular:Task#2_from_Client0 to server localhost:9101
+2025/03/09 17:16:29 client.go:87: [Client 1] Response from server: Result from server server4 for input 'regular:Task#2_from_Client1'
+2025/03/09 17:16:29 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#2_from_Client1'
+2025/03/09 17:16:29 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#2_from_Client0'
+2025/03/09 17:16:29 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#1_from_Client1'
+2025/03/09 17:16:29 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 0] Sending task: heavy:Task#4_from_Client0 to server localhost:9101
+2025/03/09 17:16:29 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 1] Sending task: heavy:Task#4_from_Client1 to server localhost:9101
+2025/03/09 17:16:29 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#2_from_Client0'
+2025/03/09 17:16:29 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 1] Sending task: regular:Task#1_from_Client1 to server localhost:9101
+2025/03/09 17:16:29 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#4_from_Client0'
+2025/03/09 17:16:29 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#4_from_Client1'
+2025/03/09 17:16:29 client.go:42: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/09 17:16:29 client.go:49: [Client] Successfully connected to Load Balancer!
+2025/03/09 17:16:29 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 0] Sending task: regular:Task#1_from_Client0 to server localhost:9101
+2025/03/09 17:16:29 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 0] Sending task: regular:Task#0_from_Client0 to server localhost:9101
+2025/03/09 17:16:29 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 1] Sending task: regular:Task#0_from_Client1 to server localhost:9101
+2025/03/09 17:16:29 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 1] Sending task: heavy:Task#1_from_Client1 to server localhost:9101
+2025/03/09 17:16:29 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 0] Sending task: heavy:Task#1_from_Client0 to server localhost:9101
+2025/03/09 17:16:29 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 1] Sending task: heavy:Task#6_from_Client1 to server localhost:9101
+2025/03/09 17:16:29 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:29 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:29 client.go:79: [Client 0] Sending task: heavy:Task#6_from_Client0 to server localhost:9101
+2025/03/09 17:16:29 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#1_from_Client1'
+2025/03/09 17:16:29 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#1_from_Client0'
+2025/03/09 17:16:29 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#6_from_Client1'
+2025/03/09 17:16:29 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#6_from_Client0'
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: regular:Task#3_from_Client1 to server localhost:9101
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: heavy:Task#3_from_Client1 to server localhost:9101
+2025/03/09 17:16:30 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:30 client.go:79: [Client 0] Sending task: heavy:Task#3_from_Client0 to server localhost:9101
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: regular:Task#2_from_Client1 to server localhost:9101
+2025/03/09 17:16:30 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#2_from_Client0'
+2025/03/09 17:16:30 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:30 client.go:79: [Client 0] Sending task: regular:Task#3_from_Client0 to server localhost:9101
+2025/03/09 17:16:30 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#1_from_Client1'
+2025/03/09 17:16:30 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#3_from_Client1'
+2025/03/09 17:16:30 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#3_from_Client0'
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: heavy:Task#5_from_Client1 to server localhost:9101
+2025/03/09 17:16:30 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:30 client.go:79: [Client 0] Sending task: heavy:Task#5_from_Client0 to server localhost:9101
+2025/03/09 17:16:30 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#2_from_Client1'
+2025/03/09 17:16:30 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#3_from_Client1'
+2025/03/09 17:16:30 client.go:42: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/09 17:16:30 client.go:49: [Client] Successfully connected to Load Balancer!
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:30 client.go:79: [Client 0] Sending task: heavy:Task#0_from_Client0 to server localhost:9104
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: heavy:Task#0_from_Client1 to server localhost:9101
+2025/03/09 17:16:30 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#5_from_Client1'
+2025/03/09 17:16:30 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#0_from_Client1'
+2025/03/09 17:16:30 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#5_from_Client0'
+2025/03/09 17:16:30 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#0_from_Client0'
+2025/03/09 17:16:30 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#0_from_Client1'
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: heavy:Task#2_from_Client1 to server localhost:9104
+2025/03/09 17:16:30 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:30 client.go:79: [Client 0] Sending task: heavy:Task#2_from_Client0 to server localhost:9100
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: heavy:Task#7_from_Client1 to server localhost:9104
+2025/03/09 17:16:30 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:30 client.go:79: [Client 0] Sending task: heavy:Task#7_from_Client0 to server localhost:9104
+2025/03/09 17:16:30 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#2_from_Client1'
+2025/03/09 17:16:30 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#2_from_Client0'
+2025/03/09 17:16:30 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#7_from_Client1'
+2025/03/09 17:16:30 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#1_from_Client0'
+2025/03/09 17:16:30 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#7_from_Client0'
+2025/03/09 17:16:30 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:30 client.go:79: [Client 0] Sending task: regular:Task#3_from_Client0 to server localhost:9100
+2025/03/09 17:16:30 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#3_from_Client0'
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: regular:Task#2_from_Client1 to server localhost:9101
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: heavy:Task#4_from_Client1 to server localhost:9100
+2025/03/09 17:16:30 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:30 client.go:79: [Client 0] Sending task: heavy:Task#4_from_Client0 to server localhost:9102
+2025/03/09 17:16:30 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#0_from_Client0'
+2025/03/09 17:16:30 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#4_from_Client1'
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: regular:Task#3_from_Client1 to server localhost:9100
+2025/03/09 17:16:30 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#4_from_Client0'
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: regular:Task#4_from_Client1 to server localhost:9100
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: heavy:Task#6_from_Client1 to server localhost:9100
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: regular:Task#1_from_Client1 to server localhost:9100
+2025/03/09 17:16:30 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:30 client.go:79: [Client 0] Sending task: heavy:Task#6_from_Client0 to server localhost:9100
+2025/03/09 17:16:30 client.go:42: [Client] Connecting to Load Balancer at localhost:9000...
+2025/03/09 17:16:30 client.go:49: [Client] Successfully connected to Load Balancer!
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: regular:Task#0_from_Client1 to server localhost:9100
+2025/03/09 17:16:30 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:30 client.go:79: [Client 0] Sending task: regular:Task#0_from_Client0 to server localhost:9100
+2025/03/09 17:16:30 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:30 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:30 client.go:79: [Client 0] Sending task: heavy:Task#1_from_Client0 to server localhost:9104
+2025/03/09 17:16:30 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:30 client.go:79: [Client 1] Sending task: heavy:Task#1_from_Client1 to server localhost:9100
+2025/03/09 17:16:30 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#6_from_Client1'
+2025/03/09 17:16:30 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#6_from_Client0'
+2025/03/09 17:16:30 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#0_from_Client0'
+2025/03/09 17:16:30 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#1_from_Client0'
+2025/03/09 17:16:30 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#1_from_Client1'
+2025/03/09 17:16:31 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:31 client.go:79: [Client 1] Sending task: heavy:Task#3_from_Client1 to server localhost:9100
+2025/03/09 17:16:31 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:31 client.go:79: [Client 0] Sending task: heavy:Task#3_from_Client0 to server localhost:9100
+2025/03/09 17:16:31 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:31 client.go:79: [Client 1] Sending task: heavy:Task#8_from_Client1 to server localhost:9104
+2025/03/09 17:16:31 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:31 client.go:79: [Client 0] Sending task: regular:Task#2_from_Client0 to server localhost:9101
+2025/03/09 17:16:31 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:31 client.go:79: [Client 0] Sending task: heavy:Task#8_from_Client0 to server localhost:9100
+2025/03/09 17:16:31 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#3_from_Client1'
+2025/03/09 17:16:31 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#3_from_Client0'
+2025/03/09 17:16:31 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#8_from_Client1'
+2025/03/09 17:16:31 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:31 client.go:79: [Client 0] Sending task: regular:Task#4_from_Client0 to server localhost:9104
+2025/03/09 17:16:31 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#2_from_Client0'
+2025/03/09 17:16:31 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#8_from_Client0'
+2025/03/09 17:16:31 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:31 client.go:79: [Client 0] Sending task: regular:Task#1_from_Client0 to server localhost:9101
+2025/03/09 17:16:31 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#2_from_Client1'
+2025/03/09 17:16:31 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:31 client.go:79: [Client 1] Sending task: heavy:Task#5_from_Client1 to server localhost:9104
+2025/03/09 17:16:31 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#3_from_Client0'
+2025/03/09 17:16:31 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:31 client.go:79: [Client 0] Sending task: heavy:Task#5_from_Client0 to server localhost:9103
+2025/03/09 17:16:31 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#5_from_Client1'
+2025/03/09 17:16:31 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#1_from_Client1'
+2025/03/09 17:16:31 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#3_from_Client1'
+2025/03/09 17:16:31 client.go:87: [Client 0] Response from server: Result from server server4 for input 'heavy:Task#5_from_Client0'
+2025/03/09 17:16:31 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:31 client.go:79: [Client 1] Sending task: heavy:Task#7_from_Client1 to server localhost:9102
+2025/03/09 17:16:31 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:31 client.go:79: [Client 0] Sending task: heavy:Task#7_from_Client0 to server localhost:9102
+2025/03/09 17:16:31 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:31 client.go:79: [Client 0] Sending task: regular:Task#1_from_Client0 to server localhost:9100
+2025/03/09 17:16:31 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:31 client.go:79: [Client 0] Sending task: heavy:Task#2_from_Client0 to server localhost:9100
+2025/03/09 17:16:31 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:31 client.go:79: [Client 1] Sending task: heavy:Task#2_from_Client1 to server localhost:9104
+2025/03/09 17:16:31 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#7_from_Client1'
+2025/03/09 17:16:31 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#7_from_Client0'
+2025/03/09 17:16:31 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#2_from_Client0'
+2025/03/09 17:16:31 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#2_from_Client1'
+2025/03/09 17:16:31 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:31 client.go:79: [Client 1] Sending task: heavy:Task#4_from_Client1 to server localhost:9102
+2025/03/09 17:16:31 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:31 client.go:79: [Client 0] Sending task: heavy:Task#4_from_Client0 to server localhost:9102
+2025/03/09 17:16:31 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:31 client.go:79: [Client 1] Sending task: heavy:Task#9_from_Client1 to server localhost:9100
+2025/03/09 17:16:31 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:31 client.go:79: [Client 0] Sending task: regular:Task#3_from_Client0 to server localhost:9103
+2025/03/09 17:16:31 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#3_from_Client0'
+2025/03/09 17:16:31 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:31 client.go:79: [Client 0] Sending task: heavy:Task#9_from_Client0 to server localhost:9104
+2025/03/09 17:16:31 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#4_from_Client1'
+2025/03/09 17:16:31 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#4_from_Client0'
+2025/03/09 17:16:31 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:31 client.go:79: [Client 1] Sending task: regular:Task#3_from_Client1 to server localhost:9100
+2025/03/09 17:16:31 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#9_from_Client1'
+2025/03/09 17:16:31 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#0_from_Client1'
+2025/03/09 17:16:31 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#4_from_Client1'
+2025/03/09 17:16:31 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#9_from_Client0'
+2025/03/09 17:16:31 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:31 client.go:79: [Client 0] Sending task: regular:Task#4_from_Client0 to server localhost:9103
+2025/03/09 17:16:31 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:31 client.go:79: [Client 1] Sending task: heavy:Task#6_from_Client1 to server localhost:9102
+2025/03/09 17:16:31 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:31 client.go:79: [Client 1] Sending task: regular:Task#2_from_Client1 to server localhost:9102
+2025/03/09 17:16:31 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#1_from_Client0'
+2025/03/09 17:16:31 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:31 client.go:79: [Client 1] Sending task: regular:Task#4_from_Client1 to server localhost:9104
+2025/03/09 17:16:31 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:31 client.go:79: [Client 0] Sending task: heavy:Task#6_from_Client0 to server localhost:9100
+2025/03/09 17:16:31 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#6_from_Client1'
+2025/03/09 17:16:31 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#6_from_Client0'
+2025/03/09 17:16:31 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:31 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:31 client.go:79: [Client 1] Sending task: heavy:Task#8_from_Client1 to server localhost:9100
+2025/03/09 17:16:32 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:32 client.go:79: [Client 0] Sending task: heavy:Task#8_from_Client0 to server localhost:9104
+2025/03/09 17:16:32 client.go:87: [Client 0] Response from server: Result from server server5 for input 'regular:Task#4_from_Client0'
+2025/03/09 17:16:32 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 0] Sending task: heavy:Task#3_from_Client0 to server localhost:9102
+2025/03/09 17:16:32 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:32 client.go:79: [Client 1] Sending task: heavy:Task#3_from_Client1 to server localhost:9100
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#8_from_Client1'
+2025/03/09 17:16:32 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#1_from_Client0'
+2025/03/09 17:16:32 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#8_from_Client0'
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#2_from_Client1'
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#3_from_Client1'
+2025/03/09 17:16:32 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#3_from_Client0'
+2025/03/09 17:16:32 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:32 client.go:79: [Client 0] Sending task: regular:Task#4_from_Client0 to server localhost:9100
+2025/03/09 17:16:32 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:32 client.go:79: [Client 1] Sending task: heavy:Task#5_from_Client1 to server localhost:9100
+2025/03/09 17:16:32 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:32 client.go:79: [Client 0] Sending task: heavy:Task#5_from_Client0 to server localhost:9103
+2025/03/09 17:16:32 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:32 client.go:79: [Client 1] Sending task: heavy:Task#10_from_Client1 to server localhost:9100
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#3_from_Client1'
+2025/03/09 17:16:32 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:32 client.go:79: [Client 1] Sending task: regular:Task#1_from_Client1 to server localhost:9100
+2025/03/09 17:16:32 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:32 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:79: [Client 1] Sending task: regular:Task#5_from_Client1 to server localhost:9100
+2025/03/09 17:16:32 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:32 client.go:79: [Client 0] Sending task: heavy:Task#10_from_Client0 to server localhost:9100
+2025/03/09 17:16:32 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#4_from_Client0'
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#5_from_Client1'
+2025/03/09 17:16:32 client.go:87: [Client 0] Response from server: Result from server server4 for input 'heavy:Task#5_from_Client0'
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server5 for input 'regular:Task#4_from_Client1'
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#10_from_Client1'
+2025/03/09 17:16:32 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 0] Sending task: regular:Task#2_from_Client0 to server localhost:9102
+2025/03/09 17:16:32 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#10_from_Client0'
+2025/03/09 17:16:32 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:32 client.go:79: [Client 1] Sending task: heavy:Task#7_from_Client1 to server localhost:9103
+2025/03/09 17:16:32 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 0] Sending task: heavy:Task#7_from_Client0 to server localhost:9102
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server4 for input 'heavy:Task#7_from_Client1'
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#1_from_Client1'
+2025/03/09 17:16:32 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 0] Sending task: regular:Task#5_from_Client0 to server localhost:9102
+2025/03/09 17:16:32 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#7_from_Client0'
+2025/03/09 17:16:32 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 1] Sending task: heavy:Task#9_from_Client1 to server localhost:9102
+2025/03/09 17:16:32 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 0] Sending task: regular:Task#2_from_Client0 to server localhost:9102
+2025/03/09 17:16:32 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 0] Sending task: heavy:Task#9_from_Client0 to server localhost:9102
+2025/03/09 17:16:32 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 1] Sending task: regular:Task#3_from_Client1 to server localhost:9102
+2025/03/09 17:16:32 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:32 client.go:79: [Client 0] Sending task: heavy:Task#4_from_Client0 to server localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 1] Sending task: heavy:Task#4_from_Client1 to server localhost:9103
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#9_from_Client1'
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#5_from_Client1'
+2025/03/09 17:16:32 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#9_from_Client0'
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server4 for input 'heavy:Task#4_from_Client1'
+2025/03/09 17:16:32 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#4_from_Client0'
+2025/03/09 17:16:32 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 1] Sending task: regular:Task#4_from_Client1 to server localhost:9102
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#4_from_Client1'
+2025/03/09 17:16:32 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 0] Sending task: regular:Task#5_from_Client0 to server localhost:9102
+2025/03/09 17:16:32 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 1] Sending task: heavy:Task#6_from_Client1 to server localhost:9102
+2025/03/09 17:16:32 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 0] Sending task: heavy:Task#6_from_Client0 to server localhost:9102
+2025/03/09 17:16:32 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 1] Sending task: regular:Task#5_from_Client1 to server localhost:9102
+2025/03/09 17:16:32 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 1] Sending task: heavy:Task#11_from_Client1 to server localhost:9102
+2025/03/09 17:16:32 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:32 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:32 client.go:79: [Client 0] Sending task: heavy:Task#11_from_Client0 to server localhost:9102
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#6_from_Client1'
+2025/03/09 17:16:32 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#6_from_Client0'
+2025/03/09 17:16:32 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#2_from_Client0'
+2025/03/09 17:16:32 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#11_from_Client1'
+2025/03/09 17:16:32 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#11_from_Client0'
+2025/03/09 17:16:32 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#2_from_Client0'
+2025/03/09 17:16:33 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:33 client.go:79: [Client 1] Sending task: heavy:Task#8_from_Client1 to server localhost:9102
+2025/03/09 17:16:33 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:33 client.go:79: [Client 1] Sending task: regular:Task#2_from_Client1 to server localhost:9102
+2025/03/09 17:16:33 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:33 client.go:79: [Client 0] Sending task: heavy:Task#8_from_Client0 to server localhost:9102
+2025/03/09 17:16:33 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#5_from_Client0'
+2025/03/09 17:16:33 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#8_from_Client1'
+2025/03/09 17:16:33 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#4_from_Client0'
+2025/03/09 17:16:33 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#8_from_Client0'
+2025/03/09 17:16:33 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:33 client.go:79: [Client 1] Sending task: heavy:Task#10_from_Client1 to server localhost:9102
+2025/03/09 17:16:33 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#5_from_Client0'
+2025/03/09 17:16:33 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:33 client.go:79: [Client 1] Sending task: regular:Task#6_from_Client1 to server localhost:9102
+2025/03/09 17:16:33 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:33 client.go:79: [Client 0] Sending task: heavy:Task#10_from_Client0 to server localhost:9102
+2025/03/09 17:16:33 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:33 client.go:79: [Client 1] Sending task: heavy:Task#5_from_Client1 to server localhost:9102
+2025/03/09 17:16:33 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#10_from_Client1'
+2025/03/09 17:16:33 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:33 client.go:79: [Client 0] Sending task: heavy:Task#5_from_Client0 to server localhost:9102
+2025/03/09 17:16:33 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:33 client.go:79: [Client 1] Sending task: regular:Task#5_from_Client1 to server localhost:9101
+2025/03/09 17:16:33 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#10_from_Client0'
+2025/03/09 17:16:33 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#6_from_Client1'
+2025/03/09 17:16:33 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#5_from_Client1'
+2025/03/09 17:16:33 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#5_from_Client0'
+2025/03/09 17:16:33 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:33 client.go:79: [Client 1] Sending task: heavy:Task#7_from_Client1 to server localhost:9101
+2025/03/09 17:16:33 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:33 client.go:79: [Client 0] Sending task: heavy:Task#7_from_Client0 to server localhost:9103
+2025/03/09 17:16:33 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:33 client.go:79: [Client 0] Sending task: regular:Task#3_from_Client0 to server localhost:9103
+2025/03/09 17:16:33 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:33 client.go:79: [Client 1] Sending task: heavy:Task#12_from_Client1 to server localhost:9101
+2025/03/09 17:16:33 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:33 client.go:79: [Client 0] Sending task: heavy:Task#12_from_Client0 to server localhost:9102
+2025/03/09 17:16:33 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:33 client.go:79: [Client 0] Sending task: regular:Task#3_from_Client0 to server localhost:9102
+2025/03/09 17:16:33 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#7_from_Client1'
+2025/03/09 17:16:33 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#3_from_Client1'
+2025/03/09 17:16:33 client.go:87: [Client 0] Response from server: Result from server server4 for input 'heavy:Task#7_from_Client0'
+2025/03/09 17:16:33 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#12_from_Client1'
+2025/03/09 17:16:33 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#12_from_Client0'
+2025/03/09 17:16:33 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:33 client.go:79: [Client 0] Sending task: regular:Task#6_from_Client0 to server localhost:9101
+2025/03/09 17:16:33 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:33 client.go:79: [Client 1] Sending task: heavy:Task#9_from_Client1 to server localhost:9101
+2025/03/09 17:16:33 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:33 client.go:79: [Client 0] Sending task: regular:Task#5_from_Client0 to server localhost:9101
+2025/03/09 17:16:33 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:33 client.go:79: [Client 0] Sending task: heavy:Task#9_from_Client0 to server localhost:9103
+2025/03/09 17:16:33 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#9_from_Client1'
+2025/03/09 17:16:33 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:33 client.go:79: [Client 0] Sending task: regular:Task#6_from_Client0 to server localhost:9101
+2025/03/09 17:16:33 client.go:87: [Client 0] Response from server: Result from server server4 for input 'heavy:Task#9_from_Client0'
+2025/03/09 17:16:33 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:33 client.go:79: [Client 1] Sending task: heavy:Task#11_from_Client1 to server localhost:9101
+2025/03/09 17:16:33 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#2_from_Client1'
+2025/03/09 17:16:33 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#5_from_Client1'
+2025/03/09 17:16:33 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:33 client.go:79: [Client 0] Sending task: heavy:Task#11_from_Client0 to server localhost:9101
+2025/03/09 17:16:33 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:33 client.go:79: [Client 1] Sending task: regular:Task#7_from_Client1 to server localhost:9101
+2025/03/09 17:16:33 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:33 client.go:79: [Client 1] Sending task: heavy:Task#6_from_Client1 to server localhost:9102
+2025/03/09 17:16:33 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#11_from_Client1'
+2025/03/09 17:16:33 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:33 client.go:79: [Client 0] Sending task: heavy:Task#6_from_Client0 to server localhost:9101
+2025/03/09 17:16:33 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#5_from_Client1'
+2025/03/09 17:16:33 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#11_from_Client0'
+2025/03/09 17:16:33 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#6_from_Client1'
+2025/03/09 17:16:33 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#6_from_Client0'
+2025/03/09 17:16:33 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#3_from_Client0'
+2025/03/09 17:16:33 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:33 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:33 client.go:79: [Client 1] Sending task: heavy:Task#8_from_Client1 to server localhost:9101
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:34 client.go:79: [Client 0] Sending task: heavy:Task#8_from_Client0 to server localhost:9101
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: regular:Task#4_from_Client1 to server localhost:9101
+2025/03/09 17:16:34 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#7_from_Client1'
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: heavy:Task#13_from_Client1 to server localhost:9103
+2025/03/09 17:16:34 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:34 client.go:79: [Client 0] Sending task: heavy:Task#13_from_Client0 to server localhost:9103
+2025/03/09 17:16:34 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#8_from_Client1'
+2025/03/09 17:16:34 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#8_from_Client0'
+2025/03/09 17:16:34 client.go:87: [Client 1] Response from server: Result from server server4 for input 'heavy:Task#13_from_Client1'
+2025/03/09 17:16:34 client.go:87: [Client 0] Response from server: Result from server server4 for input 'heavy:Task#13_from_Client0'
+2025/03/09 17:16:34 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#6_from_Client0'
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: heavy:Task#10_from_Client1 to server localhost:9102
+2025/03/09 17:16:34 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:34 client.go:79: [Client 0] Sending task: heavy:Task#10_from_Client0 to server localhost:9101
+2025/03/09 17:16:34 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#10_from_Client1'
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: regular:Task#3_from_Client1 to server localhost:9101
+2025/03/09 17:16:34 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#10_from_Client0'
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: regular:Task#6_from_Client1 to server localhost:9101
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: heavy:Task#12_from_Client1 to server localhost:9101
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: regular:Task#6_from_Client1 to server localhost:9101
+2025/03/09 17:16:34 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#3_from_Client0'
+2025/03/09 17:16:34 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#6_from_Client1'
+2025/03/09 17:16:34 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:34 client.go:79: [Client 0] Sending task: heavy:Task#12_from_Client0 to server localhost:9103
+2025/03/09 17:16:34 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#5_from_Client0'
+2025/03/09 17:16:34 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#12_from_Client1'
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#6_from_Client0'
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: heavy:Task#7_from_Client1 to server localhost:9103
+2025/03/09 17:16:34 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:34 client.go:79: [Client 0] Sending task: heavy:Task#7_from_Client0 to server localhost:9100
+2025/03/09 17:16:34 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:34 client.go:79: [Client 0] Sending task: regular:Task#4_from_Client0 to server localhost:9101
+2025/03/09 17:16:34 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#4_from_Client1'
+2025/03/09 17:16:34 client.go:87: [Client 0] Response from server: Result from server server4 for input 'heavy:Task#12_from_Client0'
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:87: [Client 1] Response from server: Result from server server4 for input 'heavy:Task#7_from_Client1'
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: regular:Task#8_from_Client1 to server localhost:9104
+2025/03/09 17:16:34 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#7_from_Client0'
+2025/03/09 17:16:34 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#4_from_Client0'
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: heavy:Task#9_from_Client1 to server localhost:9101
+2025/03/09 17:16:34 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:34 client.go:79: [Client 0] Sending task: heavy:Task#9_from_Client0 to server localhost:9104
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: heavy:Task#14_from_Client1 to server localhost:9100
+2025/03/09 17:16:34 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:34 client.go:79: [Client 0] Sending task: heavy:Task#14_from_Client0 to server localhost:9100
+2025/03/09 17:16:34 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:34 client.go:79: [Client 0] Sending task: regular:Task#7_from_Client0 to server localhost:9104
+2025/03/09 17:16:34 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#9_from_Client1'
+2025/03/09 17:16:34 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#9_from_Client0'
+2025/03/09 17:16:34 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#14_from_Client1'
+2025/03/09 17:16:34 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#14_from_Client0'
+2025/03/09 17:16:34 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#3_from_Client1'
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: heavy:Task#11_from_Client1 to server localhost:9104
+2025/03/09 17:16:34 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:34 client.go:79: [Client 0] Sending task: heavy:Task#11_from_Client0 to server localhost:9104
+2025/03/09 17:16:34 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#11_from_Client1'
+2025/03/09 17:16:34 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#11_from_Client0'
+2025/03/09 17:16:34 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:34 client.go:79: [Client 0] Sending task: regular:Task#4_from_Client0 to server localhost:9100
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: regular:Task#7_from_Client1 to server localhost:9100
+2025/03/09 17:16:34 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:34 client.go:79: [Client 0] Sending task: regular:Task#6_from_Client0 to server localhost:9100
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: heavy:Task#13_from_Client1 to server localhost:9100
+2025/03/09 17:16:34 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:34 client.go:79: [Client 0] Sending task: regular:Task#7_from_Client0 to server localhost:9101
+2025/03/09 17:16:34 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:34 client.go:79: [Client 1] Sending task: regular:Task#5_from_Client1 to server localhost:9100
+2025/03/09 17:16:34 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:34 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:34 client.go:79: [Client 0] Sending task: heavy:Task#13_from_Client0 to server localhost:9100
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#13_from_Client1'
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: heavy:Task#8_from_Client1 to server localhost:9103
+2025/03/09 17:16:35 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:35 client.go:79: [Client 0] Sending task: heavy:Task#8_from_Client0 to server localhost:9100
+2025/03/09 17:16:35 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:35 client.go:79: [Client 0] Sending task: regular:Task#5_from_Client0 to server localhost:9103
+2025/03/09 17:16:35 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#13_from_Client0'
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server4 for input 'heavy:Task#8_from_Client1'
+2025/03/09 17:16:35 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#8_from_Client0'
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#5_from_Client1'
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: heavy:Task#10_from_Client1 to server localhost:9103
+2025/03/09 17:16:35 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:35 client.go:79: [Client 0] Sending task: heavy:Task#10_from_Client0 to server localhost:9103
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: heavy:Task#15_from_Client1 to server localhost:9104
+2025/03/09 17:16:35 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:35 client.go:79: [Client 0] Sending task: heavy:Task#15_from_Client0 to server localhost:9101
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: regular:Task#4_from_Client1 to server localhost:9100
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server4 for input 'heavy:Task#10_from_Client1'
+2025/03/09 17:16:35 client.go:87: [Client 0] Response from server: Result from server server4 for input 'heavy:Task#10_from_Client0'
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#6_from_Client1'
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#15_from_Client1'
+2025/03/09 17:16:35 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#15_from_Client0'
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: heavy:Task#12_from_Client1 to server localhost:9100
+2025/03/09 17:16:35 client.go:87: [Client 0] Response from server: Result from server server5 for input 'regular:Task#7_from_Client0'
+2025/03/09 17:16:35 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:35 client.go:79: [Client 0] Sending task: heavy:Task#12_from_Client0 to server localhost:9104
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#4_from_Client1'
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server5 for input 'regular:Task#8_from_Client1'
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#12_from_Client1'
+2025/03/09 17:16:35 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#12_from_Client0'
+2025/03/09 17:16:35 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#6_from_Client0'
+2025/03/09 17:16:35 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#4_from_Client0'
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#7_from_Client1'
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: heavy:Task#14_from_Client1 to server localhost:9100
+2025/03/09 17:16:35 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:35 client.go:79: [Client 0] Sending task: heavy:Task#14_from_Client0 to server localhost:9100
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#14_from_Client1'
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: heavy:Task#9_from_Client1 to server localhost:9104
+2025/03/09 17:16:35 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:35 client.go:79: [Client 0] Sending task: heavy:Task#9_from_Client0 to server localhost:9100
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: regular:Task#6_from_Client1 to server localhost:9100
+2025/03/09 17:16:35 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#7_from_Client0'
+2025/03/09 17:16:35 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#14_from_Client0'
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#9_from_Client1'
+2025/03/09 17:16:35 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#9_from_Client0'
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: heavy:Task#11_from_Client1 to server localhost:9100
+2025/03/09 17:16:35 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:35 client.go:79: [Client 0] Sending task: heavy:Task#11_from_Client0 to server localhost:9104
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: regular:Task#7_from_Client1 to server localhost:9100
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: heavy:Task#16_from_Client1 to server localhost:9100
+2025/03/09 17:16:35 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:35 client.go:79: [Client 0] Sending task: heavy:Task#16_from_Client0 to server localhost:9104
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#11_from_Client1'
+2025/03/09 17:16:35 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#5_from_Client0'
+2025/03/09 17:16:35 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:35 client.go:79: [Client 0] Sending task: regular:Task#8_from_Client0 to server localhost:9100
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: regular:Task#5_from_Client1 to server localhost:9100
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: regular:Task#9_from_Client1 to server localhost:9100
+2025/03/09 17:16:35 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#11_from_Client0'
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#16_from_Client1'
+2025/03/09 17:16:35 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#16_from_Client0'
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: heavy:Task#13_from_Client1 to server localhost:9104
+2025/03/09 17:16:35 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:35 client.go:79: [Client 0] Sending task: heavy:Task#13_from_Client0 to server localhost:9104
+2025/03/09 17:16:35 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:35 client.go:79: [Client 0] Sending task: regular:Task#5_from_Client0 to server localhost:9104
+2025/03/09 17:16:35 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:35 client.go:79: [Client 0] Sending task: regular:Task#7_from_Client0 to server localhost:9100
+2025/03/09 17:16:35 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:35 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:35 client.go:79: [Client 1] Sending task: regular:Task#8_from_Client1 to server localhost:9104
+2025/03/09 17:16:35 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#13_from_Client1'
+2025/03/09 17:16:36 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#13_from_Client0'
+2025/03/09 17:16:36 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#7_from_Client1'
+2025/03/09 17:16:36 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:36 client.go:79: [Client 1] Sending task: heavy:Task#15_from_Client1 to server localhost:9100
+2025/03/09 17:16:36 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#8_from_Client0'
+2025/03/09 17:16:36 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:36 client.go:79: [Client 0] Sending task: regular:Task#8_from_Client0 to server localhost:9104
+2025/03/09 17:16:36 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:36 client.go:79: [Client 0] Sending task: heavy:Task#15_from_Client0 to server localhost:9100
+2025/03/09 17:16:36 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#15_from_Client1'
+2025/03/09 17:16:36 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#7_from_Client0'
+2025/03/09 17:16:36 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:36 client.go:79: [Client 1] Sending task: heavy:Task#10_from_Client1 to server localhost:9100
+2025/03/09 17:16:36 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:36 client.go:79: [Client 0] Sending task: heavy:Task#10_from_Client0 to server localhost:9100
+2025/03/09 17:16:36 client.go:87: [Client 0] Response from server: Result from server server5 for input 'regular:Task#8_from_Client0'
+2025/03/09 17:16:36 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#15_from_Client0'
+2025/03/09 17:16:36 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#10_from_Client1'
+2025/03/09 17:16:36 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#10_from_Client0'
+2025/03/09 17:16:36 client.go:87: [Client 1] Response from server: Result from server server5 for input 'regular:Task#8_from_Client1'
+2025/03/09 17:16:36 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:36 client.go:79: [Client 1] Sending task: heavy:Task#12_from_Client1 to server localhost:9100
+2025/03/09 17:16:36 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 0] Sending task: regular:Task#6_from_Client0 to server localhost:9102
+2025/03/09 17:16:36 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 0] Sending task: heavy:Task#12_from_Client0 to server localhost:9102
+2025/03/09 17:16:36 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 1] Sending task: heavy:Task#17_from_Client1 to server localhost:9102
+2025/03/09 17:16:36 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 0] Sending task: heavy:Task#17_from_Client0 to server localhost:9102
+2025/03/09 17:16:36 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#12_from_Client1'
+2025/03/09 17:16:36 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#12_from_Client0'
+2025/03/09 17:16:36 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#17_from_Client1'
+2025/03/09 17:16:36 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#17_from_Client0'
+2025/03/09 17:16:36 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#5_from_Client1'
+2025/03/09 17:16:36 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 1] Sending task: heavy:Task#14_from_Client1 to server localhost:9102
+2025/03/09 17:16:36 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 0] Sending task: heavy:Task#14_from_Client0 to server localhost:9102
+2025/03/09 17:16:36 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 1] Sending task: regular:Task#8_from_Client1 to server localhost:9102
+2025/03/09 17:16:36 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#6_from_Client1'
+2025/03/09 17:16:36 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#14_from_Client1'
+2025/03/09 17:16:36 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#14_from_Client0'
+2025/03/09 17:16:36 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 0] Sending task: regular:Task#9_from_Client0 to server localhost:9102
+2025/03/09 17:16:36 client.go:87: [Client 0] Response from server: Result from server server5 for input 'regular:Task#5_from_Client0'
+2025/03/09 17:16:36 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 1] Sending task: heavy:Task#16_from_Client1 to server localhost:9102
+2025/03/09 17:16:36 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 0] Sending task: regular:Task#8_from_Client0 to server localhost:9102
+2025/03/09 17:16:36 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#8_from_Client0'
+2025/03/09 17:16:36 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 0] Sending task: regular:Task#9_from_Client0 to server localhost:9102
+2025/03/09 17:16:36 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 0] Sending task: heavy:Task#16_from_Client0 to server localhost:9102
+2025/03/09 17:16:36 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#9_from_Client1'
+2025/03/09 17:16:36 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#16_from_Client1'
+2025/03/09 17:16:36 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 1] Sending task: heavy:Task#11_from_Client1 to server localhost:9102
+2025/03/09 17:16:36 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 0] Sending task: heavy:Task#11_from_Client0 to server localhost:9102
+2025/03/09 17:16:36 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 1] Sending task: regular:Task#9_from_Client1 to server localhost:9102
+2025/03/09 17:16:36 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#16_from_Client0'
+2025/03/09 17:16:36 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#9_from_Client0'
+2025/03/09 17:16:36 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#11_from_Client1'
+2025/03/09 17:16:36 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#11_from_Client0'
+2025/03/09 17:16:36 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 1] Sending task: heavy:Task#13_from_Client1 to server localhost:9102
+2025/03/09 17:16:36 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 0] Sending task: heavy:Task#13_from_Client0 to server localhost:9102
+2025/03/09 17:16:36 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 1] Sending task: heavy:Task#18_from_Client1 to server localhost:9102
+2025/03/09 17:16:36 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 0] Sending task: heavy:Task#18_from_Client0 to server localhost:9102
+2025/03/09 17:16:36 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:36 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:36 client.go:79: [Client 1] Sending task: regular:Task#6_from_Client1 to server localhost:9102
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#13_from_Client1'
+2025/03/09 17:16:37 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#13_from_Client0'
+2025/03/09 17:16:37 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:37 client.go:79: [Client 1] Sending task: regular:Task#7_from_Client1 to server localhost:9102
+2025/03/09 17:16:37 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:37 client.go:79: [Client 1] Sending task: heavy:Task#15_from_Client1 to server localhost:9102
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#18_from_Client1'
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#9_from_Client1'
+2025/03/09 17:16:37 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:37 client.go:79: [Client 0] Sending task: heavy:Task#15_from_Client0 to server localhost:9102
+2025/03/09 17:16:37 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#18_from_Client0'
+2025/03/09 17:16:37 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:37 client.go:79: [Client 0] Sending task: regular:Task#6_from_Client0 to server localhost:9102
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#15_from_Client1'
+2025/03/09 17:16:37 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#15_from_Client0'
+2025/03/09 17:16:37 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:37 client.go:79: [Client 0] Sending task: regular:Task#9_from_Client0 to server localhost:9102
+2025/03/09 17:16:37 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:37 client.go:79: [Client 1] Sending task: regular:Task#10_from_Client1 to server localhost:9103
+2025/03/09 17:16:37 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:37 client.go:79: [Client 1] Sending task: heavy:Task#17_from_Client1 to server localhost:9102
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#17_from_Client1'
+2025/03/09 17:16:37 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 0] Sending task: heavy:Task#17_from_Client0 to server localhost:9101
+2025/03/09 17:16:37 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#6_from_Client0'
+2025/03/09 17:16:37 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:37 client.go:79: [Client 0] Sending task: regular:Task#10_from_Client0 to server localhost:9102
+2025/03/09 17:16:37 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:37 client.go:79: [Client 1] Sending task: heavy:Task#12_from_Client1 to server localhost:9102
+2025/03/09 17:16:37 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 0] Sending task: heavy:Task#12_from_Client0 to server localhost:9101
+2025/03/09 17:16:37 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#9_from_Client0'
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#6_from_Client1'
+2025/03/09 17:16:37 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#17_from_Client0'
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#12_from_Client1'
+2025/03/09 17:16:37 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#12_from_Client0'
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#8_from_Client1'
+2025/03/09 17:16:37 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 1] Sending task: heavy:Task#14_from_Client1 to server localhost:9101
+2025/03/09 17:16:37 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 0] Sending task: heavy:Task#14_from_Client0 to server localhost:9101
+2025/03/09 17:16:37 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 1] Sending task: heavy:Task#19_from_Client1 to server localhost:9101
+2025/03/09 17:16:37 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 1] Sending task: regular:Task#10_from_Client1 to server localhost:9101
+2025/03/09 17:16:37 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 0] Sending task: heavy:Task#19_from_Client0 to server localhost:9101
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#14_from_Client1'
+2025/03/09 17:16:37 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#6_from_Client0'
+2025/03/09 17:16:37 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#14_from_Client0'
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server4 for input 'regular:Task#10_from_Client1'
+2025/03/09 17:16:37 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 1] Sending task: heavy:Task#16_from_Client1 to server localhost:9101
+2025/03/09 17:16:37 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#9_from_Client0'
+2025/03/09 17:16:37 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:37 client.go:79: [Client 0] Sending task: heavy:Task#16_from_Client0 to server localhost:9103
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#19_from_Client1'
+2025/03/09 17:16:37 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#19_from_Client0'
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#16_from_Client1'
+2025/03/09 17:16:37 client.go:87: [Client 0] Response from server: Result from server server4 for input 'heavy:Task#16_from_Client0'
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#10_from_Client1'
+2025/03/09 17:16:37 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 1] Sending task: heavy:Task#18_from_Client1 to server localhost:9101
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#7_from_Client1'
+2025/03/09 17:16:37 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:37 client.go:79: [Client 0] Sending task: regular:Task#7_from_Client0 to server localhost:9102
+2025/03/09 17:16:37 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 0] Sending task: regular:Task#10_from_Client0 to server localhost:9101
+2025/03/09 17:16:37 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#10_from_Client0'
+2025/03/09 17:16:37 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 1] Sending task: regular:Task#7_from_Client1 to server localhost:9101
+2025/03/09 17:16:37 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#18_from_Client1'
+2025/03/09 17:16:37 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 0] Sending task: heavy:Task#18_from_Client0 to server localhost:9101
+2025/03/09 17:16:37 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 1] Sending task: heavy:Task#13_from_Client1 to server localhost:9101
+2025/03/09 17:16:37 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 0] Sending task: heavy:Task#13_from_Client0 to server localhost:9101
+2025/03/09 17:16:37 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:37 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:37 client.go:79: [Client 1] Sending task: regular:Task#9_from_Client1 to server localhost:9101
+2025/03/09 17:16:38 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#18_from_Client0'
+2025/03/09 17:16:38 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#13_from_Client1'
+2025/03/09 17:16:38 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#13_from_Client0'
+2025/03/09 17:16:38 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:38 client.go:79: [Client 1] Sending task: heavy:Task#15_from_Client1 to server localhost:9101
+2025/03/09 17:16:38 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#9_from_Client1'
+2025/03/09 17:16:38 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:38 client.go:79: [Client 0] Sending task: regular:Task#7_from_Client0 to server localhost:9101
+2025/03/09 17:16:38 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:38 client.go:79: [Client 0] Sending task: heavy:Task#15_from_Client0 to server localhost:9101
+2025/03/09 17:16:38 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:38 client.go:79: [Client 1] Sending task: regular:Task#11_from_Client1 to server localhost:9101
+2025/03/09 17:16:38 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:38 client.go:79: [Client 0] Sending task: regular:Task#10_from_Client0 to server localhost:9101
+2025/03/09 17:16:38 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#15_from_Client1'
+2025/03/09 17:16:38 client.go:94: [Client] All client requests completed.
+2025/03/09 17:16:38 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#10_from_Client0'
+2025/03/09 17:16:38 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#7_from_Client1'
+2025/03/09 17:16:38 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#7_from_Client0'
+2025/03/09 17:16:38 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#15_from_Client0'
+2025/03/09 17:16:38 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:38 client.go:79: [Client 1] Sending task: heavy:Task#17_from_Client1 to server localhost:9101
+2025/03/09 17:16:38 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:38 client.go:79: [Client 0] Sending task: heavy:Task#17_from_Client0 to server localhost:9101
+2025/03/09 17:16:38 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:38 client.go:79: [Client 1] Sending task: regular:Task#11_from_Client1 to server localhost:9103
+2025/03/09 17:16:38 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#17_from_Client1'
+2025/03/09 17:16:38 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:38 client.go:79: [Client 1] Sending task: regular:Task#8_from_Client1 to server localhost:9101
+2025/03/09 17:16:38 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#17_from_Client0'
+2025/03/09 17:16:38 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:38 client.go:79: [Client 0] Sending task: regular:Task#11_from_Client0 to server localhost:9100
+2025/03/09 17:16:38 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:38 client.go:79: [Client 1] Sending task: heavy:Task#19_from_Client1 to server localhost:9103
+2025/03/09 17:16:38 client.go:87: [Client 1] Response from server: Result from server server4 for input 'heavy:Task#19_from_Client1'
+2025/03/09 17:16:38 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:38 client.go:79: [Client 0] Sending task: heavy:Task#19_from_Client0 to server localhost:9100
+2025/03/09 17:16:38 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:38 client.go:79: [Client 1] Sending task: heavy:Task#14_from_Client1 to server localhost:9100
+2025/03/09 17:16:38 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:38 client.go:79: [Client 0] Sending task: heavy:Task#14_from_Client0 to server localhost:9103
+2025/03/09 17:16:38 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#10_from_Client0'
+2025/03/09 17:16:38 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#7_from_Client0'
+2025/03/09 17:16:38 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#19_from_Client0'
+2025/03/09 17:16:38 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:38 client.go:79: [Client 1] Sending task: regular:Task#10_from_Client1 to server localhost:9100
+2025/03/09 17:16:38 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#14_from_Client1'
+2025/03/09 17:16:38 client.go:87: [Client 0] Response from server: Result from server server4 for input 'heavy:Task#14_from_Client0'
+2025/03/09 17:16:38 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:38 client.go:79: [Client 1] Sending task: heavy:Task#16_from_Client1 to server localhost:9101
+2025/03/09 17:16:38 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:38 client.go:79: [Client 0] Sending task: regular:Task#11_from_Client0 to server localhost:9100
+2025/03/09 17:16:38 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:38 client.go:79: [Client 1] Sending task: regular:Task#8_from_Client1 to server localhost:9103
+2025/03/09 17:16:38 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:38 client.go:79: [Client 0] Sending task: regular:Task#8_from_Client0 to server localhost:9103
+2025/03/09 17:16:38 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:38 client.go:79: [Client 0] Sending task: heavy:Task#16_from_Client0 to server localhost:9100
+2025/03/09 17:16:38 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#10_from_Client1'
+2025/03/09 17:16:38 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#16_from_Client1'
+2025/03/09 17:16:38 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#11_from_Client0'
+2025/03/09 17:16:38 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#16_from_Client0'
+2025/03/09 17:16:38 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#11_from_Client1'
+2025/03/09 17:16:38 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:38 client.go:79: [Client 1] Sending task: heavy:Task#18_from_Client1 to server localhost:9100
+2025/03/09 17:16:38 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:38 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:38 client.go:79: [Client 0] Sending task: heavy:Task#18_from_Client0 to server localhost:9101
+2025/03/09 17:16:38 client.go:87: [Client 1] Response from server: Result from server server4 for input 'regular:Task#8_from_Client1'
+2025/03/09 17:16:38 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#18_from_Client1'
+2025/03/09 17:16:38 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#18_from_Client0'
+2025/03/09 17:16:41 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#8_from_Client0'
+2025/03/09 17:16:41 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:41 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:41 client.go:79: [Client 0] Sending task: regular:Task#11_from_Client0 to server localhost:9103
+2025/03/09 17:16:41 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:41 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:41 client.go:79: [Client 0] Sending task: regular:Task#8_from_Client0 to server localhost:9100
+2025/03/09 17:16:41 client.go:87: [Client 1] Response from server: Result from server server4 for input 'regular:Task#11_from_Client1'
+2025/03/09 17:16:41 client.go:94: [Client] All client requests completed.
+2025/03/09 17:16:41 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:41 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:41 client.go:79: [Client 1] Sending task: heavy:Task#15_from_Client1 to server localhost:9100
+2025/03/09 17:16:41 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:41 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:41 client.go:79: [Client 0] Sending task: heavy:Task#15_from_Client0 to server localhost:9100
+2025/03/09 17:16:41 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#8_from_Client1'
+2025/03/09 17:16:41 client.go:87: [Client 1] Response from server: Result from server server1 for input 'heavy:Task#15_from_Client1'
+2025/03/09 17:16:41 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#15_from_Client0'
+2025/03/09 17:16:41 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:41 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:41 client.go:79: [Client 1] Sending task: regular:Task#11_from_Client1 to server localhost:9100
+2025/03/09 17:16:41 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:41 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:41 client.go:79: [Client 1] Sending task: heavy:Task#17_from_Client1 to server localhost:9104
+2025/03/09 17:16:41 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:41 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:41 client.go:79: [Client 0] Sending task: regular:Task#12_from_Client0 to server localhost:9104
+2025/03/09 17:16:41 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:41 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:41 client.go:79: [Client 0] Sending task: heavy:Task#17_from_Client0 to server localhost:9104
+2025/03/09 17:16:41 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:41 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:41 client.go:79: [Client 1] Sending task: regular:Task#12_from_Client1 to server localhost:9104
+2025/03/09 17:16:41 client.go:87: [Client 0] Response from server: Result from server server5 for input 'regular:Task#12_from_Client0'
+2025/03/09 17:16:41 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:41 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:41 client.go:79: [Client 1] Sending task: regular:Task#9_from_Client1 to server localhost:9100
+2025/03/09 17:16:41 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#17_from_Client1'
+2025/03/09 17:16:41 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#11_from_Client0'
+2025/03/09 17:16:41 client.go:87: [Client 0] Response from server: Result from server server5 for input 'heavy:Task#17_from_Client0'
+2025/03/09 17:16:41 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:41 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:41 client.go:79: [Client 1] Sending task: heavy:Task#19_from_Client1 to server localhost:9104
+2025/03/09 17:16:41 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:41 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:41 client.go:79: [Client 0] Sending task: heavy:Task#19_from_Client0 to server localhost:9101
+2025/03/09 17:16:41 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#19_from_Client1'
+2025/03/09 17:16:41 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:41 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:41 client.go:79: [Client 0] Sending task: regular:Task#9_from_Client0 to server localhost:9100
+2025/03/09 17:16:41 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#19_from_Client0'
+2025/03/09 17:16:41 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:41 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:41 client.go:79: [Client 1] Sending task: regular:Task#12_from_Client1 to server localhost:9100
+2025/03/09 17:16:42 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#11_from_Client0'
+2025/03/09 17:16:42 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#11_from_Client1'
+2025/03/09 17:16:42 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:42 client.go:79: [Client 1] Sending task: regular:Task#9_from_Client1 to server localhost:9104
+2025/03/09 17:16:42 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:42 client.go:79: [Client 1] Sending task: heavy:Task#16_from_Client1 to server localhost:9104
+2025/03/09 17:16:42 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:42 client.go:79: [Client 0] Sending task: heavy:Task#16_from_Client0 to server localhost:9100
+2025/03/09 17:16:42 client.go:87: [Client 1] Response from server: Result from server server5 for input 'heavy:Task#16_from_Client1'
+2025/03/09 17:16:42 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#16_from_Client0'
+2025/03/09 17:16:42 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:42 client.go:79: [Client 0] Sending task: regular:Task#13_from_Client0 to server localhost:9104
+2025/03/09 17:16:42 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#9_from_Client0'
+2025/03/09 17:16:42 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:42 client.go:79: [Client 1] Sending task: heavy:Task#18_from_Client1 to server localhost:9101
+2025/03/09 17:16:42 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:42 client.go:79: [Client 0] Sending task: regular:Task#12_from_Client0 to server localhost:9100
+2025/03/09 17:16:42 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:42 client.go:79: [Client 0] Sending task: heavy:Task#18_from_Client0 to server localhost:9101
+2025/03/09 17:16:42 client.go:87: [Client 1] Response from server: Result from server server5 for input 'regular:Task#9_from_Client1'
+2025/03/09 17:16:42 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#18_from_Client1'
+2025/03/09 17:16:42 client.go:87: [Client 1] Response from server: Result from server server5 for input 'regular:Task#12_from_Client1'
+2025/03/09 17:16:42 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#12_from_Client1'
+2025/03/09 17:16:42 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#12_from_Client0'
+2025/03/09 17:16:42 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#8_from_Client0'
+2025/03/09 17:16:42 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#18_from_Client0'
+2025/03/09 17:16:42 client.go:94: [Client] All client requests completed.
+2025/03/09 17:16:42 client.go:87: [Client 0] Response from server: Result from server server5 for input 'regular:Task#13_from_Client0'
+2025/03/09 17:16:42 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:42 client.go:79: [Client 0] Sending task: regular:Task#12_from_Client0 to server localhost:9104
+2025/03/09 17:16:42 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:42 client.go:79: [Client 1] Sending task: regular:Task#12_from_Client1 to server localhost:9100
+2025/03/09 17:16:42 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#9_from_Client1'
+2025/03/09 17:16:42 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:42 client.go:79: [Client 1] Sending task: heavy:Task#17_from_Client1 to server localhost:9101
+2025/03/09 17:16:42 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:42 client.go:79: [Client 0] Sending task: heavy:Task#17_from_Client0 to server localhost:9100
+2025/03/09 17:16:42 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:42 client.go:79: [Client 0] Sending task: regular:Task#10_from_Client0 to server localhost:9100
+2025/03/09 17:16:42 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#17_from_Client1'
+2025/03/09 17:16:42 client.go:87: [Client 0] Response from server: Result from server server1 for input 'heavy:Task#17_from_Client0'
+2025/03/09 17:16:42 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:42 client.go:79: [Client 1] Sending task: regular:Task#10_from_Client1 to server localhost:9101
+2025/03/09 17:16:42 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:42 client.go:79: [Client 1] Sending task: heavy:Task#19_from_Client1 to server localhost:9101
+2025/03/09 17:16:42 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:42 client.go:79: [Client 1] Sending task: regular:Task#13_from_Client1 to server localhost:9102
+2025/03/09 17:16:42 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:42 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:42 client.go:79: [Client 0] Sending task: regular:Task#13_from_Client0 to server localhost:9101
+2025/03/09 17:16:42 client.go:79: [Client 1] Sending task: regular:Task#13_from_Client1 to server localhost:9101
+2025/03/09 17:16:42 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:42 client.go:79: [Client 0] Sending task: regular:Task#9_from_Client0 to server localhost:9101
+2025/03/09 17:16:42 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:42 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:42 client.go:79: [Client 0] Sending task: heavy:Task#19_from_Client0 to server localhost:9101
+2025/03/09 17:16:42 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#19_from_Client1'
+2025/03/09 17:16:43 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#19_from_Client0'
+2025/03/09 17:16:43 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:43 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:43 client.go:79: [Client 0] Sending task: regular:Task#14_from_Client0 to server localhost:9101
+2025/03/09 17:16:43 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#13_from_Client1'
+2025/03/09 17:16:43 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#9_from_Client0'
+2025/03/09 17:16:43 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:43 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:43 client.go:79: [Client 1] Sending task: regular:Task#10_from_Client1 to server localhost:9101
+2025/03/09 17:16:43 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#10_from_Client1'
+2025/03/09 17:16:43 client.go:87: [Client 0] Response from server: Result from server server5 for input 'regular:Task#12_from_Client0'
+2025/03/09 17:16:43 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#10_from_Client1'
+2025/03/09 17:16:43 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:43 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:43 client.go:79: [Client 1] Sending task: heavy:Task#18_from_Client1 to server localhost:9101
+2025/03/09 17:16:43 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:43 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:43 client.go:79: [Client 0] Sending task: heavy:Task#18_from_Client0 to server localhost:9101
+2025/03/09 17:16:43 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#13_from_Client1'
+2025/03/09 17:16:43 client.go:87: [Client 1] Response from server: Result from server server2 for input 'heavy:Task#18_from_Client1'
+2025/03/09 17:16:43 client.go:87: [Client 0] Response from server: Result from server server2 for input 'heavy:Task#18_from_Client0'
+2025/03/09 17:16:43 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#14_from_Client0'
+2025/03/09 17:16:43 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#13_from_Client0'
+2025/03/09 17:16:43 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#12_from_Client1'
+2025/03/09 17:16:43 client.go:94: [Client] All client requests completed.
+2025/03/09 17:16:43 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:43 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:43 client.go:79: [Client 1] Sending task: regular:Task#14_from_Client1 to server localhost:9101
+2025/03/09 17:16:43 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:43 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#10_from_Client0'
+2025/03/09 17:16:43 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:43 client.go:79: [Client 0] Sending task: regular:Task#10_from_Client0 to server localhost:9101
+2025/03/09 17:16:43 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:43 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:43 client.go:79: [Client 1] Sending task: regular:Task#11_from_Client1 to server localhost:9102
+2025/03/09 17:16:43 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:43 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:43 client.go:79: [Client 0] Sending task: regular:Task#13_from_Client0 to server localhost:9102
+2025/03/09 17:16:43 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:43 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:43 client.go:79: [Client 1] Sending task: regular:Task#11_from_Client1 to server localhost:9102
+2025/03/09 17:16:43 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:43 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:43 client.go:79: [Client 1] Sending task: regular:Task#14_from_Client1 to server localhost:9102
+2025/03/09 17:16:43 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:43 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:43 client.go:79: [Client 1] Sending task: heavy:Task#19_from_Client1 to server localhost:9102
+2025/03/09 17:16:43 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:43 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:43 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:43 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:43 client.go:79: [Client 0] Sending task: heavy:Task#19_from_Client0 to server localhost:9102
+2025/03/09 17:16:43 client.go:79: [Client 0] Sending task: regular:Task#15_from_Client0 to server localhost:9102
+2025/03/09 17:16:44 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:44 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:44 client.go:79: [Client 0] Sending task: regular:Task#14_from_Client0 to server localhost:9102
+2025/03/09 17:16:44 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:44 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:44 client.go:79: [Client 1] Sending task: regular:Task#13_from_Client1 to server localhost:9102
+2025/03/09 17:16:44 client.go:87: [Client 1] Response from server: Result from server server3 for input 'heavy:Task#19_from_Client1'
+2025/03/09 17:16:44 client.go:87: [Client 0] Response from server: Result from server server3 for input 'heavy:Task#19_from_Client0'
+2025/03/09 17:16:44 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:44 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:44 client.go:79: [Client 0] Sending task: regular:Task#11_from_Client0 to server localhost:9102
+2025/03/09 17:16:44 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#14_from_Client1'
+2025/03/09 17:16:44 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#11_from_Client0'
+2025/03/09 17:16:44 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#11_from_Client1'
+2025/03/09 17:16:44 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#10_from_Client0'
+2025/03/09 17:16:44 client.go:94: [Client] All client requests completed.
+2025/03/09 17:16:44 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#11_from_Client1'
+2025/03/09 17:16:44 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:44 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:44 client.go:79: [Client 1] Sending task: regular:Task#15_from_Client1 to server localhost:9102
+2025/03/09 17:16:44 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#14_from_Client1'
+2025/03/09 17:16:44 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#15_from_Client0'
+2025/03/09 17:16:44 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#13_from_Client0'
+2025/03/09 17:16:44 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:44 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:44 client.go:79: [Client 0] Sending task: regular:Task#12_from_Client0 to server localhost:9103
+2025/03/09 17:16:44 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#15_from_Client1'
+2025/03/09 17:16:44 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:44 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:44 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:44 client.go:79: [Client 0] Sending task: regular:Task#11_from_Client0 to server localhost:9104
+2025/03/09 17:16:44 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:44 client.go:79: [Client 1] Sending task: regular:Task#12_from_Client1 to server localhost:9103
+2025/03/09 17:16:44 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#13_from_Client1'
+2025/03/09 17:16:44 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#14_from_Client0'
+2025/03/09 17:16:45 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:45 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:45 client.go:79: [Client 1] Sending task: regular:Task#12_from_Client1 to server localhost:9100
+2025/03/09 17:16:45 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#12_from_Client0'
+2025/03/09 17:16:45 client.go:87: [Client 1] Response from server: Result from server server4 for input 'regular:Task#12_from_Client1'
+2025/03/09 17:16:45 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:45 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:45 client.go:79: [Client 1] Sending task: regular:Task#15_from_Client1 to server localhost:9103
+2025/03/09 17:16:45 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:45 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:45 client.go:79: [Client 0] Sending task: regular:Task#16_from_Client0 to server localhost:9103
+2025/03/09 17:16:45 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:45 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:45 client.go:79: [Client 0] Sending task: regular:Task#14_from_Client0 to server localhost:9103
+2025/03/09 17:16:45 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:45 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:45 client.go:79: [Client 1] Sending task: regular:Task#16_from_Client1 to server localhost:9100
+2025/03/09 17:16:45 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:45 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:45 client.go:79: [Client 1] Sending task: regular:Task#14_from_Client1 to server localhost:9100
+2025/03/09 17:16:45 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#12_from_Client1'
+2025/03/09 17:16:45 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:45 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:45 client.go:79: [Client 0] Sending task: regular:Task#15_from_Client0 to server localhost:9100
+2025/03/09 17:16:45 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#15_from_Client0'
+2025/03/09 17:16:45 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#16_from_Client0'
+2025/03/09 17:16:45 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:45 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:45 client.go:79: [Client 0] Sending task: regular:Task#13_from_Client0 to server localhost:9100
+2025/03/09 17:16:45 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:45 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:45 client.go:79: [Client 1] Sending task: regular:Task#13_from_Client1 to server localhost:9100
+2025/03/09 17:16:45 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#14_from_Client0'
+2025/03/09 17:16:45 client.go:87: [Client 0] Response from server: Result from server server5 for input 'regular:Task#11_from_Client0'
+2025/03/09 17:16:45 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#13_from_Client1'
+2025/03/09 17:16:45 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#14_from_Client1'
+2025/03/09 17:16:45 client.go:87: [Client 1] Response from server: Result from server server4 for input 'regular:Task#15_from_Client1'
+2025/03/09 17:16:45 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:45 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:45 client.go:79: [Client 1] Sending task: regular:Task#13_from_Client1 to server localhost:9100
+2025/03/09 17:16:46 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:46 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:46 client.go:79: [Client 0] Sending task: regular:Task#16_from_Client0 to server localhost:9100
+2025/03/09 17:16:46 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:46 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:46 client.go:79: [Client 0] Sending task: regular:Task#17_from_Client0 to server localhost:9100
+2025/03/09 17:16:46 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#16_from_Client1'
+2025/03/09 17:16:46 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:46 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:46 client.go:79: [Client 0] Sending task: regular:Task#15_from_Client0 to server localhost:9100
+2025/03/09 17:16:46 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:46 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:46 client.go:79: [Client 0] Sending task: regular:Task#12_from_Client0 to server localhost:9100
+2025/03/09 17:16:46 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#15_from_Client0'
+2025/03/09 17:16:46 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:46 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:46 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:46 client.go:79: [Client 1] Sending task: regular:Task#14_from_Client1 to server localhost:9100
+2025/03/09 17:16:46 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:46 client.go:79: [Client 1] Sending task: regular:Task#15_from_Client1 to server localhost:9100
+2025/03/09 17:16:46 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:46 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:46 client.go:79: [Client 1] Sending task: regular:Task#16_from_Client1 to server localhost:9101
+2025/03/09 17:16:46 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#16_from_Client1'
+2025/03/09 17:16:46 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#15_from_Client1'
+2025/03/09 17:16:46 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#16_from_Client0'
+2025/03/09 17:16:46 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#13_from_Client1'
+2025/03/09 17:16:46 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#13_from_Client0'
+2025/03/09 17:16:46 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:46 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:46 client.go:79: [Client 1] Sending task: regular:Task#17_from_Client1 to server localhost:9101
+2025/03/09 17:16:46 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#17_from_Client0'
+2025/03/09 17:16:46 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#14_from_Client1'
+2025/03/09 17:16:46 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#17_from_Client1'
+2025/03/09 17:16:46 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:46 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:46 client.go:79: [Client 0] Sending task: regular:Task#16_from_Client0 to server localhost:9100
+2025/03/09 17:16:46 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:46 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:46 client.go:79: [Client 1] Sending task: regular:Task#17_from_Client1 to server localhost:9101
+2025/03/09 17:16:46 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#12_from_Client0'
+2025/03/09 17:16:46 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:46 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:46 client.go:79: [Client 1] Sending task: regular:Task#16_from_Client1 to server localhost:9101
+2025/03/09 17:16:47 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:47 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:47 client.go:79: [Client 0] Sending task: regular:Task#17_from_Client0 to server localhost:9101
+2025/03/09 17:16:47 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:47 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:47 client.go:79: [Client 1] Sending task: regular:Task#14_from_Client1 to server localhost:9101
+2025/03/09 17:16:47 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:47 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:47 client.go:79: [Client 0] Sending task: regular:Task#14_from_Client0 to server localhost:9104
+2025/03/09 17:16:47 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:47 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:47 client.go:79: [Client 0] Sending task: regular:Task#18_from_Client0 to server localhost:9104
+2025/03/09 17:16:47 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:47 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:47 client.go:79: [Client 1] Sending task: regular:Task#15_from_Client1 to server localhost:9104
+2025/03/09 17:16:47 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#16_from_Client1'
+2025/03/09 17:16:47 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:47 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:47 client.go:79: [Client 1] Sending task: regular:Task#18_from_Client1 to server localhost:9101
+2025/03/09 17:16:47 client.go:87: [Client 0] Response from server: Result from server server5 for input 'regular:Task#18_from_Client0'
+2025/03/09 17:16:47 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:47 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:47 client.go:79: [Client 0] Sending task: regular:Task#13_from_Client0 to server localhost:9104
+2025/03/09 17:16:47 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#17_from_Client1'
+2025/03/09 17:16:47 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#14_from_Client1'
+2025/03/09 17:16:47 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#18_from_Client1'
+2025/03/09 17:16:47 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#16_from_Client0'
+2025/03/09 17:16:47 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:47 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:47 client.go:79: [Client 1] Sending task: regular:Task#17_from_Client1 to server localhost:9102
+2025/03/09 17:16:47 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:47 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:47 client.go:79: [Client 0] Sending task: regular:Task#19_from_Client0 to server localhost:9102
+2025/03/09 17:16:47 client.go:87: [Client 1] Response from server: Result from server server5 for input 'regular:Task#15_from_Client1'
+2025/03/09 17:16:47 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#19_from_Client0'
+2025/03/09 17:16:47 client.go:87: [Client 0] Response from server: Result from server server5 for input 'regular:Task#14_from_Client0'
+2025/03/09 17:16:47 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#17_from_Client0'
+2025/03/09 17:16:47 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:47 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:47 client.go:79: [Client 1] Sending task: regular:Task#18_from_Client1 to server localhost:9102
+2025/03/09 17:16:48 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#18_from_Client1'
+2025/03/09 17:16:48 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:48 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:48 client.go:79: [Client 1] Sending task: regular:Task#15_from_Client1 to server localhost:9102
+2025/03/09 17:16:48 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:48 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:48 client.go:79: [Client 1] Sending task: regular:Task#19_from_Client1 to server localhost:9103
+2025/03/09 17:16:48 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:48 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:48 client.go:79: [Client 0] Sending task: regular:Task#17_from_Client0 to server localhost:9102
+2025/03/09 17:16:48 client.go:87: [Client 0] Response from server: Result from server server5 for input 'regular:Task#13_from_Client0'
+2025/03/09 17:16:48 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#17_from_Client0'
+2025/03/09 17:16:48 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:48 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:48 client.go:79: [Client 1] Sending task: regular:Task#16_from_Client1 to server localhost:9102
+2025/03/09 17:16:48 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:48 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:48 client.go:79: [Client 0] Sending task: regular:Task#15_from_Client0 to server localhost:9102
+2025/03/09 17:16:48 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:48 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:48 client.go:79: [Client 0] Sending task: regular:Task#18_from_Client0 to server localhost:9102
+2025/03/09 17:16:48 client.go:87: [Client 1] Response from server: Result from server server4 for input 'regular:Task#19_from_Client1'
+2025/03/09 17:16:48 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#15_from_Client0'
+2025/03/09 17:16:48 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#18_from_Client0'
+2025/03/09 17:16:48 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:48 client.go:68: [Client 1] Assigned to server: localhost:9102
+2025/03/09 17:16:48 client.go:79: [Client 1] Sending task: regular:Task#19_from_Client1 to server localhost:9102
+2025/03/09 17:16:48 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#17_from_Client1'
+2025/03/09 17:16:48 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:48 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:48 client.go:79: [Client 0] Sending task: regular:Task#14_from_Client0 to server localhost:9104
+2025/03/09 17:16:48 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:48 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:48 client.go:79: [Client 0] Sending task: regular:Task#18_from_Client0 to server localhost:9100
+2025/03/09 17:16:48 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#15_from_Client1'
+2025/03/09 17:16:48 client.go:94: [Client] All client requests completed.
+2025/03/09 17:16:49 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:49 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:49 client.go:79: [Client 0] Sending task: regular:Task#16_from_Client0 to server localhost:9103
+2025/03/09 17:16:49 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:49 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:49 client.go:79: [Client 0] Sending task: regular:Task#19_from_Client0 to server localhost:9103
+2025/03/09 17:16:49 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#18_from_Client0'
+2025/03/09 17:16:49 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#19_from_Client0'
+2025/03/09 17:16:49 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#16_from_Client0'
+2025/03/09 17:16:49 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#19_from_Client1'
+2025/03/09 17:16:49 client.go:87: [Client 1] Response from server: Result from server server3 for input 'regular:Task#16_from_Client1'
+2025/03/09 17:16:49 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:49 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:49 client.go:79: [Client 1] Sending task: regular:Task#18_from_Client1 to server localhost:9103
+2025/03/09 17:16:49 client.go:87: [Client 1] Response from server: Result from server server4 for input 'regular:Task#18_from_Client1'
+2025/03/09 17:16:49 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:49 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:49 client.go:79: [Client 1] Sending task: regular:Task#16_from_Client1 to server localhost:9104
+2025/03/09 17:16:49 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:49 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:49 client.go:79: [Client 0] Sending task: regular:Task#19_from_Client0 to server localhost:9103
+2025/03/09 17:16:49 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:49 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:49 client.go:79: [Client 0] Sending task: regular:Task#17_from_Client0 to server localhost:9103
+2025/03/09 17:16:49 client.go:94: [Client] All client requests completed.
+2025/03/09 17:16:49 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:49 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:49 client.go:79: [Client 1] Sending task: regular:Task#17_from_Client1 to server localhost:9103
+2025/03/09 17:16:49 client.go:87: [Client 0] Response from server: Result from server server5 for input 'regular:Task#14_from_Client0'
+2025/03/09 17:16:49 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:49 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:49 client.go:79: [Client 1] Sending task: regular:Task#19_from_Client1 to server localhost:9104
+2025/03/09 17:16:49 client.go:87: [Client 1] Response from server: Result from server server5 for input 'regular:Task#19_from_Client1'
+2025/03/09 17:16:50 client.go:87: [Client 1] Response from server: Result from server server4 for input 'regular:Task#17_from_Client1'
+2025/03/09 17:16:50 client.go:87: [Client 1] Response from server: Result from server server5 for input 'regular:Task#16_from_Client1'
+2025/03/09 17:16:50 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:50 client.go:68: [Client 0] Assigned to server: localhost:9100
+2025/03/09 17:16:50 client.go:79: [Client 0] Sending task: regular:Task#15_from_Client0 to server localhost:9100
+2025/03/09 17:16:50 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#19_from_Client0'
+2025/03/09 17:16:50 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#17_from_Client0'
+2025/03/09 17:16:50 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:50 client.go:68: [Client 1] Assigned to server: localhost:9104
+2025/03/09 17:16:50 client.go:79: [Client 1] Sending task: regular:Task#18_from_Client1 to server localhost:9104
+2025/03/09 17:16:50 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:50 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:50 client.go:79: [Client 1] Sending task: regular:Task#17_from_Client1 to server localhost:9100
+2025/03/09 17:16:50 client.go:94: [Client] All client requests completed.
+2025/03/09 17:16:51 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:51 client.go:68: [Client 0] Assigned to server: localhost:9101
+2025/03/09 17:16:51 client.go:79: [Client 0] Sending task: regular:Task#18_from_Client0 to server localhost:9101
+2025/03/09 17:16:51 client.go:87: [Client 1] Response from server: Result from server server5 for input 'regular:Task#18_from_Client1'
+2025/03/09 17:16:51 client.go:87: [Client 0] Response from server: Result from server server1 for input 'regular:Task#15_from_Client0'
+2025/03/09 17:16:51 client.go:87: [Client 0] Response from server: Result from server server2 for input 'regular:Task#18_from_Client0'
+2025/03/09 17:16:51 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:51 client.go:68: [Client 1] Assigned to server: localhost:9101
+2025/03/09 17:16:51 client.go:79: [Client 1] Sending task: regular:Task#19_from_Client1 to server localhost:9101
+2025/03/09 17:16:51 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#17_from_Client1'
+2025/03/09 17:16:51 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:51 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:51 client.go:79: [Client 0] Sending task: regular:Task#16_from_Client0 to server localhost:9102
+2025/03/09 17:16:51 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:51 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:51 client.go:79: [Client 0] Sending task: regular:Task#19_from_Client0 to server localhost:9102
+2025/03/09 17:16:51 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#16_from_Client0'
+2025/03/09 17:16:51 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#19_from_Client0'
+2025/03/09 17:16:52 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:52 client.go:68: [Client 1] Assigned to server: localhost:9103
+2025/03/09 17:16:52 client.go:79: [Client 1] Sending task: regular:Task#18_from_Client1 to server localhost:9103
+2025/03/09 17:16:52 client.go:87: [Client 1] Response from server: Result from server server2 for input 'regular:Task#19_from_Client1'
+2025/03/09 17:16:52 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:52 client.go:68: [Client 0] Assigned to server: localhost:9102
+2025/03/09 17:16:52 client.go:79: [Client 0] Sending task: regular:Task#17_from_Client0 to server localhost:9102
+2025/03/09 17:16:52 client.go:87: [Client 1] Response from server: Result from server server4 for input 'regular:Task#18_from_Client1'
+2025/03/09 17:16:52 client.go:87: [Client 0] Response from server: Result from server server3 for input 'regular:Task#17_from_Client0'
+2025/03/09 17:16:53 client.go:57: [Client 1] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:53 client.go:68: [Client 1] Assigned to server: localhost:9100
+2025/03/09 17:16:53 client.go:79: [Client 1] Sending task: regular:Task#19_from_Client1 to server localhost:9100
+2025/03/09 17:16:53 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:53 client.go:68: [Client 0] Assigned to server: localhost:9103
+2025/03/09 17:16:53 client.go:79: [Client 0] Sending task: regular:Task#18_from_Client0 to server localhost:9103
+2025/03/09 17:16:53 client.go:87: [Client 1] Response from server: Result from server server1 for input 'regular:Task#19_from_Client1'
+2025/03/09 17:16:54 client.go:94: [Client] All client requests completed.
+2025/03/09 17:16:54 client.go:87: [Client 0] Response from server: Result from server server4 for input 'regular:Task#18_from_Client0'
+2025/03/09 17:16:54 client.go:57: [Client 0] Requesting best server from LB (Policy: least_load)
+2025/03/09 17:16:54 client.go:68: [Client 0] Assigned to server: localhost:9104
+2025/03/09 17:16:54 client.go:79: [Client 0] Sending task: regular:Task#19_from_Client0 to server localhost:9104
+2025/03/09 17:16:54 client.go:87: [Client 0] Response from server: Result from server server5 for input 'regular:Task#19_from_Client0'
+2025/03/09 17:16:55 client.go:94: [Client] All client requests completed.

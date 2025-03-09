@@ -1,0 +1,15 @@
+----------------------------------------
+Final Performance Metrics for LB Policy: least_load
+Test duration (seconds): 25
+Total responses: 400
+Throughput (responses/sec): 16.00
+
+Load Balancer Assignment Distribution:
+    383 0.00
+    104 localhost:9101
+    100 localhost:9100
+     94 localhost:9102
+     56 localhost:9104
+     46 localhost:9103
+     17 1.00
+----------------------------------------

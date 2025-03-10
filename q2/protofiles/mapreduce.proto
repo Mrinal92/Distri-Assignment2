@@ -30,6 +30,8 @@ message RegisterWorkerRequest {
 
 message RegisterWorkerResponse {
   string worker_id = 1;
+  int64 master_start_time = 2; // in Unix nanoseconds
+  int64 reg_delay = 3;         // in seconds
 }
 
 message GetTaskRequest {

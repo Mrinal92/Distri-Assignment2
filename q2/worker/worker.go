@@ -10,13 +10,13 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"regexp"
 	"sort"
 	"strconv"
 	"strings"
 	"time"
 
 	"google.golang.org/grpc"
-	//pb "mapreduce/proto" // adjust this import path as needed
 	pb "github.com/Mrinal92/Distri-Assignment2/q2/protofiles"
 )
 
@@ -29,23 +29,29 @@ type KeyValue struct {
 // Global job type variable.
 var jobType string
 
+// wordRegex matches words that consist of letters and digits and allow an internal apostrophe.
+// It captures contractions (e.g. "couldn’t") as one token.
+var wordRegex = regexp.MustCompile(`[A-Za-z0-9]+(?:['’][A-Za-z0-9]+)*`)
+
 // ----------------- Map Functions -----------------
 
-// wordCountMap tokenizes the file into words and emits (word, "1") pairs.
+// wordCountMap tokenizes the file using wordRegex and emits (word, "1") pairs.
 func wordCountMap(filename string, contents string) []KeyValue {
 	var kva []KeyValue
-	words := strings.Fields(contents)
+	words := wordRegex.FindAllString(contents, -1)
 	for _, w := range words {
+		w = strings.ToLower(w)
 		kva = append(kva, KeyValue{Key: w, Value: "1"})
 	}
 	return kva
 }
 
-// invertedIndexMap emits (word, filename) pairs.
+// invertedIndexMap tokenizes the file using wordRegex and emits (word, filename) pairs.
 func invertedIndexMap(filename string, contents string) []KeyValue {
 	var kva []KeyValue
-	words := strings.Fields(contents)
+	words := wordRegex.FindAllString(contents, -1)
 	for _, w := range words {
+		w = strings.ToLower(w)
 		kva = append(kva, KeyValue{Key: w, Value: filename})
 	}
 	return kva
@@ -88,14 +94,10 @@ func ihash(key string) int {
 
 // ----------------- RPC Helper Functions -----------------
 
-// registerWorker registers this worker with the master.
-func registerWorker(client pb.MasterServiceClient, address string) string {
-	req := &pb.RegisterWorkerRequest{WorkerAddress: address}
-	resp, err := client.RegisterWorker(context.Background(), req)
-	if err != nil {
-		log.Fatalf("Failed to register worker: %v", err)
-	}
-	return resp.WorkerId
+// registerWorker registers this worker with the master using the provided worker ID.
+func registerWorker(client pb.MasterServiceClient, workerID string) (*pb.RegisterWorkerResponse, error) {
+	req := &pb.RegisterWorkerRequest{WorkerAddress: workerID}
+	return client.RegisterWorker(context.Background(), req)
 }
 
 // callGetTask requests a task from the master.
@@ -123,8 +125,9 @@ func callReportTask(client pb.MasterServiceClient, workerID string, taskType pb.
 
 // ----------------- Task Execution Functions -----------------
 
-// doMapTask reads the input file, applies the map function, partitions output into n_reduce buckets,
-// and writes intermediate files (mr-<mapTaskID>-<reduceID>).
+// doMapTask reads the input file, applies the appropriate map function,
+// partitions the output into n_reduce buckets, and writes intermediate files
+// (named "mr-<mapTaskID>-<reduceID>") in the current directory.
 func doMapTask(task *pb.Task) {
 	filename := task.InputFile
 	data, err := ioutil.ReadFile(filename)
@@ -132,7 +135,6 @@ func doMapTask(task *pb.Task) {
 		log.Fatalf("cannot read %v", filename)
 	}
 
-	// Choose the map function based on the job type.
 	var kva []KeyValue
 	if jobType == "wordcount" {
 		kva = wordCountMap(filename, string(data))
@@ -143,13 +145,11 @@ func doMapTask(task *pb.Task) {
 	}
 
 	nReduce := int(task.NReduce)
-	// Partition the key/value pairs into buckets.
 	buckets := make([][]KeyValue, nReduce)
 	for _, kv := range kva {
 		index := ihash(kv.Key) % nReduce
 		buckets[index] = append(buckets[index], kv)
 	}
-	// Write each bucket to an intermediate file.
 	for i := 0; i < nReduce; i++ {
 		oname := fmt.Sprintf("mr-%d-%d", task.TaskId, i)
 		file, err := os.Create(oname)
@@ -167,19 +167,18 @@ func doMapTask(task *pb.Task) {
 	log.Printf("MAP task %d completed", task.TaskId)
 }
 
-// doReduceTask reads intermediate files from all map tasks for the given reduce partition,
-// applies the reduce function, and writes the final output to mr-out-<reduceID>.
+// doReduceTask reads intermediate files from the current directory,
+// applies the appropriate reduce function, and writes the final output
+// to "mr-out-<reduceID>".
 func doReduceTask(task *pb.Task) {
 	nMap := int(task.NMap)
 	reduceID := int(task.ReduceId)
 	var kva []KeyValue
 
-	// Read intermediate files from every map task.
 	for i := 0; i < nMap; i++ {
 		filename := fmt.Sprintf("mr-%d-%d", i, reduceID)
 		data, err := ioutil.ReadFile(filename)
 		if err != nil {
-			// Skip missing files.
 			continue
 		}
 		dec := json.NewDecoder(strings.NewReader(string(data)))
@@ -192,20 +191,17 @@ func doReduceTask(task *pb.Task) {
 		}
 	}
 
-	// Group values by key.
 	kvMap := make(map[string][]string)
 	for _, kv := range kva {
 		kvMap[kv.Key] = append(kvMap[kv.Key], kv.Value)
 	}
 
-	// Open output file for this reduce task.
 	oname := fmt.Sprintf("mr-out-%d", reduceID)
 	file, err := os.Create(oname)
 	if err != nil {
 		log.Fatalf("cannot create output file %v", oname)
 	}
 
-	// Process each key.
 	for key, values := range kvMap {
 		var output string
 		if jobType == "wordcount" {
@@ -213,19 +209,16 @@ func doReduceTask(task *pb.Task) {
 		} else if jobType == "invertedindex" {
 			output = invertedIndexReduce(key, values)
 		}
-		// Write one line per key.
 		fmt.Fprintf(file, "%v %v\n", key, output)
 	}
 	file.Close()
 	log.Printf("REDUCE task %d completed", task.TaskId)
 }
 
-// ----------------- Main Worker Loop -----------------
-
 func main() {
-	// Command-line flags.
 	masterAddr := flag.String("master", "localhost:50051", "master address")
 	jobTypeFlag := flag.String("job", "wordcount", "job type: wordcount or invertedindex")
+	workerIDFlag := flag.String("worker", "worker-1", "unique worker ID")
 	flag.Parse()
 	jobType = *jobTypeFlag
 
@@ -236,11 +229,23 @@ func main() {
 	defer conn.Close()
 	client := pb.NewMasterServiceClient(conn)
 
-	// For simplicity, use a fixed worker address.
-	workerID := registerWorker(client, "worker-1")
+	resp, err := registerWorker(client, *workerIDFlag)
+	if err != nil {
+		log.Fatalf("Worker registration failed: %v", err)
+	}
+	workerID := resp.WorkerId
 	log.Printf("Worker registered with ID: %s (job type: %s)", workerID, jobType)
 
-	// Main loop: request tasks, execute them, then report completion.
+	masterStart := time.Unix(0, resp.MasterStartTime)
+	delay := time.Duration(resp.RegDelay) * time.Second
+	startPollTime := masterStart.Add(delay)
+	now := time.Now()
+	if startPollTime.After(now) {
+		waitDuration := startPollTime.Sub(now)
+		log.Printf("Waiting for %v before starting task polling...", waitDuration)
+		time.Sleep(waitDuration)
+	}
+
 	for {
 		task := callGetTask(client, workerID)
 		switch task.TaskType {

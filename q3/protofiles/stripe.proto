@@ -1,0 +1,102 @@
+syntax = "proto3";
+
+package stripe;
+
+option go_package = "./";
+
+// ---------------------
+// Authentication messages
+// ---------------------
+message AuthRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message AuthResponse {
+  bool success = 1;
+  string token = 2;
+  string message = 3;
+}
+
+// ---------------------
+// Registration messages
+// ---------------------
+message RegisterRequest {
+  string username = 1;
+  string password = 2;
+  string account_number = 3;
+}
+
+message RegisterResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+// ---------------------
+// Payment messages
+// ---------------------
+message PaymentRequest {
+  string transaction_id = 1;
+  string sender_account = 2;
+  string receiver_account = 3;
+  double amount = 4;
+  string idempotency_key = 5;
+}
+
+message PaymentResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+// ---------------------
+// 2PC messages for bank communication
+// ---------------------
+message PrepareRequest {
+  string transaction_id = 1;
+  string account_number = 2;
+  double amount = 3;
+  bool is_debit = 4; // true for debit (sender), false for credit (receiver)
+}
+
+message PrepareResponse {
+  bool canCommit = 1;
+  string message = 2;
+}
+
+message CommitRequest {
+  string transaction_id = 1;
+  string account_number = 2;
+  double amount = 3;
+  bool is_debit = 4;
+}
+
+message CommitResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message RollbackRequest {
+  string transaction_id = 1;
+  string account_number = 2;
+  bool is_debit = 3;
+}
+
+message RollbackResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+// ---------------------
+// Service definitions
+// ---------------------
+service PaymentGateway {
+  rpc Register(RegisterRequest) returns (RegisterResponse);
+  rpc Authenticate(AuthRequest) returns (AuthResponse);
+  rpc ProcessPayment(PaymentRequest) returns (PaymentResponse);
+}
+
+service Bank {
+  rpc PreparePayment(PrepareRequest) returns (PrepareResponse);
+  rpc CommitPayment(CommitRequest) returns (CommitResponse);
+  rpc RollbackPayment(RollbackRequest) returns (RollbackResponse);
+}
